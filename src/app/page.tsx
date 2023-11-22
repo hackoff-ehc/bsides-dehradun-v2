@@ -1,3 +1,10 @@
+import Landing from '../Components/Home/Home';
+
 export default function Home() {
-  return <main>Hello</main>;
+  return (
+    <main>
+      {' '}
+      <Landing />
+    </main>
+  );
 }

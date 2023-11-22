@@ -2,24 +2,28 @@ import Logo from '../../assets/navLogo.png';
 import './Navbar.css';
 import down from '../../assets/down.svg';
 import Link from 'next/link';
+import Image from 'next/image';
 export default function Navbar() {
   return (
     <div className='navContainer'>
-      <img src={Logo.src} alt='' />
+      <Link href='/'>
+        <Image src={Logo} alt='No Image Available' />
+      </Link>
+
       <Link href='/coming-soon'>
         <div className='navcon'>
-          OVERVIEW <img src={down.src} alt='' />{' '}
+          OVERVIEW <Image src={down} alt='None' />{' '}
         </div>
       </Link>
       <Link href='/coming-soon'>
         <div className='navcon'>
-          SCHEDULE <img src={down.src} alt='' />{' '}
+          SCHEDULE <Image src={down} alt='None' />{' '}
         </div>
       </Link>
       <Link href='/coming-soon'>
         {' '}
         <div className='navcon'>
-          CONFERENCE <img src={down.src} alt='' />{' '}
+          CONFERENCE <Image src={down} alt='None' />{' '}
         </div>
       </Link>
       <Link href='/coming-soon'>

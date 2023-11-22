@@ -1,0 +1,31 @@
+.heroContainer{
+position: absolute;
+top: 28vh;
+width: 85%;
+left: 15%;
+font-size: 130px;
+color: white;
+font-family: var(--poppins);
+font-weight: 700;
+}
+.subText{
+    display: flex;
+}
+.mainText,.subText{
+    width: 100%;
+
+}
+
+.mainText .subText .date{
+    
+  font-family: var(--poppins);
+  font-size: 20vmin;
+  margin: 0;
+  
+  color: rgba(236, 0, 51, 1);
+  text-shadow:  -1vmin -1vmin 0 rgba(255, 255, 255, 1);
+}
+.subText span{
+    margin-top: 20px;
+    margin-left: 2%;
+}

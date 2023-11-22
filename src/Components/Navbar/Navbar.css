@@ -4,7 +4,8 @@
     padding-right: 20px;
     width: 70%;
     height: 90px;
-    margin-left: 18%;
+    padding-left: 10px;
+    margin-left: 16%;
     padding-top: 5px;
     background: rgba(182, 182, 182, 0.50);
     display: flex;
@@ -17,7 +18,7 @@
     font-size: 18px;
 }
 .navContainer img{
-    margin-left: 10px;
+    margin-left: 2px;
 }
 .navcon{
     display: flex;

@@ -1,5 +1,6 @@
 .navContainer{
     position: fixed;
+    
     top: 20px;
     padding-right: 20px;
     width: 70%;
@@ -9,6 +10,7 @@
     padding-top: 5px;
     background: rgba(182, 182, 182, 0.50);
     display: flex;
+
     border-radius: 20px;
     justify-content: space-between;
     align-items: center;
@@ -30,4 +32,11 @@
     width: fit-content;
     padding: 15px;
     border-radius: 25px;
+}
+.bgCont{
+    background-image: url("../../assets/navBg.svg");
+    height: 130px;
+    background-color: black;
+    z-index: 10000;
+    box-shadow: 0 0  8px inherit inset;
 }

@@ -5,8 +5,8 @@ import './Home.css';
 export default function Landing() {
   return (
     <>
+      <Navbar />
       <div className='homeContainer'>
-        <Navbar />
         <Hero />
       </div>
     </>

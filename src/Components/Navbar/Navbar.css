@@ -1,42 +1,42 @@
-.navContainer{
-    position: fixed;
-    
-    top: 20px;
-    padding-right: 20px;
-    width: 70%;
-    height: 90px;
-    padding-left: 10px;
-    margin-left: 16%;
-    padding-top: 5px;
-    background: rgba(182, 182, 182, 0.50);
-    display: flex;
+.navContainer {
+  position: fixed;
 
-    border-radius: 20px;
-    justify-content: space-between;
-    align-items: center;
-    font-family: var(--poppins);
-    color: white;
-    font-weight: 700;
-    font-size: 18px;
+  top: 20px;
+  padding-right: 20px;
+  width: 70%;
+  height: 90px;
+  padding-left: 10px;
+  margin-left: 16%;
+  padding-top: 5px;
+  background: rgba(182, 182, 182, 0.5);
+  display: flex;
+
+  border-radius: 20px;
+  justify-content: space-between;
+  align-items: center;
+  font-family: var(--poppins);
+  color: white;
+  font-weight: 700;
+  font-size: clamp(14px, 1.11vw, 18px);
 }
-.navContainer img{
-    margin-left: 2px;
+.navContainer img {
+  margin-left: 2px;
 }
-.navcon{
-    display: flex;
-    cursor: pointer;
+.navcon {
+  display: flex;
+  cursor: pointer;
 }
-.getTicket{
-   background: rgba(97, 4, 215, 1);
-    height: 60px;
-    width: fit-content;
-    padding: 15px;
-    border-radius: 25px;
+.getTicket {
+  background: rgba(97, 4, 215, 1);
+  height: 60px;
+  width: fit-content;
+  padding: 15px;
+  border-radius: 25px;
 }
-.bgCont{
-    background-image: url("../../assets/navBg.svg");
-    height: 130px;
-    background-color: black;
-    z-index: 10000;
-    box-shadow: 0 0  8px inherit inset;
+.bgCont {
+  background-image: url('../../assets/navBg.svg');
+  height: 130px;
+  background-color: black;
+  z-index: 10000;
+  box-shadow: 0 0 8px inherit inset;
 }

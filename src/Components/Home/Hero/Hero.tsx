@@ -12,7 +12,7 @@ function Card({ text, key }: { text: String; key: Number }) {
   );
 }
 
-export default function Hero() {
+export const Hero = () => {
   //for the 2024 part
   const texts: String[] = [
     'Threat Intelligence',
@@ -78,7 +78,7 @@ export default function Hero() {
           </Marquee>
         </div>
 
-        <div className='mainText'>
+        <div className='mainText relative mx-auto mt-[15vh] flex flex-col justify-center items-center z-50'>
           <span ref={el} />
           <div className='subText'>
             <span className='date' ref={fl}></span>
@@ -100,4 +100,4 @@ export default function Hero() {
       </div>
     </>
   );
-}
+};

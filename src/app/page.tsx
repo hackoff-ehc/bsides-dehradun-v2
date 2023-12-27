@@ -1,10 +1,12 @@
-import Landing from '../Components/Home/Home';
+import { Hero, Interest } from '@/components/Home';
 
 export default function Home() {
   return (
     <main>
-      {' '}
-      <Landing />
+      {/* <div className='homeContainer'>
+        <Hero />
+      </div> */}
+      <Interest />
     </main>
   );
 }

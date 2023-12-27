@@ -1,9 +1,0 @@
-.homeContainer{
-    background-image:  url("../../assets/mainBG.svg");
-    background-color: black;
-    height: 500%;
-    position: absolute;
-    top: -2vh;
-    width: 100%;
-    z-index: -1000;
-}

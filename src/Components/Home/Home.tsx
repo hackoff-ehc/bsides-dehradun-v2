@@ -8,7 +8,9 @@ export default function Landing() {
   return (
     <>
       <Navbar />
-      <div className='homeContainer'>{/* <Hero /> */}</div>
+      <div className='homeContainer'>
+        <Hero />
+      </div>
       <Community />
       <Footer />
     </>

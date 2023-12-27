@@ -71,6 +71,7 @@ export default function Hero() {
   return (
     <>
       <div className='heroContainer'>
+        <div className='fakeContainer'></div>
         <div className='cyber'>
           <Marquee gradientWidth={10} speed={100}>
             <p>CYBER &nbsp;</p>
@@ -85,7 +86,7 @@ export default function Hero() {
             <span ref={pl} />
           </div>
         </div>
-        <div className='conference'>
+        <div className='conference cyber'>
           <Marquee gradientWidth={10} speed={100}>
             <p>CONFERENCE</p>
           </Marquee>

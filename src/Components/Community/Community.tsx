@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 const Community = () => {
   return (
-    <div className=' w-full md:text-center text-white p-10 lg:px-40 py-24'>
+    <div className=' w-full md:text-center text-white p-10 lg:px-40 py-24 mt-96 pt-80'>
       <h1 className='text-4xl md:text-5xl font-semibold leading-20 md:leading-[60px]'>
         A Conference for and by
         <br />

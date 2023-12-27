@@ -1,3 +1,4 @@
+
 .heroContainer{
 position: absolute;
 top: 10vh;
@@ -8,33 +9,39 @@ color: white;
 font-family: var(--poppins);
 font-weight: 700;
 }
-.subText{
+
+.subText {
     display: flex;
 }
-.mainText,.subText{
+
+.mainText,
+.subText {
     width: 85%;
 
 }
-.mainText{
+
+.mainText {
     z-index: 10000;
     position: absolute;
     left: 15%;
     top: 20vh;
 }
 
-.mainText .subText .date{
-    
-  font-family: var(--poppins);
-  font-size: 18vmin;
-  margin: 0;
-  
-  color: rgba(236, 0, 51, 1);
-  text-shadow:  -1vmin -1vmin 0 rgba(255, 255, 255, 1);
+.mainText .subText .date {
+
+    font-family: var(--poppins);
+    font-size: 18vmin;
+    margin: 0;
+
+    color: rgba(236, 0, 51, 1);
+    text-shadow: -1vmin -1vmin 0 rgba(255, 255, 255, 1);
 }
-.subText span{
+
+.subText span {
     margin-top: 0px;
     margin-left: 2%;
 }
+
 .cyber p{
     color: white;
     font-size: 130px;
@@ -46,12 +53,13 @@ font-weight: 700;
 ){
     .cyber p{
         color: transparent;
-        -webkit-text-stroke: 0.1vw rgba(255, 0, 0, 0.5)
-        ;
+        -webkit-text-stroke: 0.1vw rgba(255, 0, 0, 0.5);
+
         text-shadow: none;
     }
 }
-.cyber{
+
+.cyber {
     position: absolute;
     top: 5vh;
     width: fit-content;
@@ -60,7 +68,7 @@ font-weight: 700;
     left: 10%;
 }
 
-.conference{
+.conference {
     position: absolute;
     top: 60vh;
     width: fit-content;
@@ -68,7 +76,8 @@ font-weight: 700;
     width: 80%;
     left: 10%;
 }
-.cardCont{
+
+.cardCont {
     background-color: rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: center;
@@ -80,9 +89,10 @@ font-weight: 700;
     border-radius: 20px;
     font-size: 24px;
     margin: 0 10px;
-    
+
 }
-.cards{
+
+.cards {
     position: absolute;
     top: 78vh;
     width: fit-content;

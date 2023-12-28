@@ -4,7 +4,7 @@ position: absolute;
 top: 10vh;
 width: 100%;
 left: 0;
-font-size: 18vmin;
+
 color: white;
 font-family: var(--poppins);
 font-weight: 700;
@@ -17,6 +17,7 @@ font-weight: 700;
 .mainText,
 .subText {
     width: 85%;
+    font-size: 18vmin;
 
 }
 
@@ -44,6 +45,7 @@ font-weight: 700;
 
 .cyber p{
     color: white;
+    font-size: 30vmin;
     font-size: 130px;
     text-shadow: 1px 1px rgba(255, 0, 0, 0.5)
     , -1px -1px rgba(255, 0, 0, 0.5)
@@ -61,7 +63,7 @@ font-weight: 700;
 
 .cyber {
     position: absolute;
-    top: 5vh;
+    top: 10vh;
     width: fit-content;
     z-index: 1;
     width: 80%;
@@ -101,14 +103,41 @@ font-weight: 700;
     left: 10%;
 }
 .fakeContainer{
-    height: 100vh;
+    height: 90vh;
     width: 100%;
     background-color: transparent;
     z-index: 10;
 
 }
 
-@media screen  and  (min-width:320px) and (max-width: 480px){}
+@media screen  and  (min-width:320px) and (max-width: 480px){
+    
+    .mainText .subText .date{
+        font-size: 10vmin;
+    }
+    .mainText,.subText{
+        top: 12vh;
+        font-size: 10vmin;
+    
+    }
+    .cyber{
+        top: -2vh;
+        font-size: 12vmin;
+    }
+    .conference{
+        top: 30vh;
+    }
+    .fakeContainer{
+        height: 0vh;
+    }
+    .cards{
+        top: 40vh;
+    }
+    .cardCont{
+        font-size: 12px;
+        font-weight: 500;
+    }
+}
 @media screen  and  (min-width:481px) and (max-width: 768px){}
 @media screen  and  (min-width:769px) and (max-width: 1024px){
     

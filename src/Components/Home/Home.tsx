@@ -1,6 +1,7 @@
 import Community from '../Community/Community';
 import Footer from '../Footer/Footer';
-import Hero from '../Hero/Hero';
+// import Hero from '../Hero/Hero';
+import Form from '../ConnectForm/Form';
 import Navbar from '../Navbar/Navbar';
 import './Home.css';
 
@@ -12,6 +13,7 @@ export default function Landing() {
         <Hero />
       </div>
       <Community />
+      <Form/>
       <Footer />
     </>
   );

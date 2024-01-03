@@ -14,7 +14,7 @@ const Community = () => {
         the world come together to collaborate, learn, and share their knowledge. We are responsible
         for organizing an independent BSides-approved event for Dehradun.
       </p>
-      <div className='border-2 border-[#6104D7] max-w-[120px] text-center p-3 rounded-xl md:mx-auto my-5 cursor-pointer hover:bg-violet-900 hover:scale-105 shadow-2xl hover:shadow-violet-800 hover:border-2'>
+      <div className='border-2 backdrop-blur-lg border-[#6104D7] max-w-[120px] text-center p-3 rounded-xl md:mx-auto my-5 cursor-pointer hover:bg-violet-900 hover:scale-105 shadow-2xl hover:shadow-violet-800 hover:border-2'>
         <Link href='/coming-soon'>About Us</Link>
       </div>
     </div>

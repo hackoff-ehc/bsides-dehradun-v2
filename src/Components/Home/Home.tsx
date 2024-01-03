@@ -1,6 +1,6 @@
 import Community from '../Community/Community';
 import Footer from '../Footer/Footer';
-// import Hero from '../Hero/Hero';
+import Hero from '../Hero/Hero';
 import Form from '../ConnectForm/Form';
 import Navbar from '../Navbar/Navbar';
 import './Home.css';

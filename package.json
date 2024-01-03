@@ -17,12 +17,8 @@
     "react-dom": "^18",
     "react-fast-marquee": "^1.6.2",
     "react-icons": "^4.12.0",
-
-    "typed.js": "^2.1.0",
-
     "typed.js": "^2.1.0",
     "use-places-autocomplete": "^4.0.1"
-
   },
   "devDependencies": {
     "@types/node": "^20",

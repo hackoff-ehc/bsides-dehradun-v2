@@ -53,7 +53,7 @@ function HamburgerNavbar() {
   const [left, setLeft] = useState<string>('110%');
   useEffect(() => {
     setLeft(burger ? '0%' : '110%');
-  });
+  }, [burger]);
 
   return (
     <>
@@ -101,14 +101,15 @@ function HamburgerNavbar() {
 
 export default function Navbar() {
   const [width, setWidth] = useState(0);
-  useEffect(() => setWidth(window.innerWidth));
+  useEffect(() => setWidth(window.innerWidth), []);
   useEffect(() => {
     const handleResize = () => {
       setWidth((prevWidth) => {
         const newWidth = window.innerWidth;
         console.log(newWidth);
         return newWidth;
-      });
+      }),
+        [];
     };
     if (typeof window !== 'undefined') {
       window.addEventListener('resize', handleResize);

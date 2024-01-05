@@ -4,7 +4,7 @@ import React from 'react';
 import Typed from 'typed.js';
 import Marquee from 'react-fast-marquee';
 
-function Card({ text, key }: { text: String; key: Number }) {
+function Card({ text }: { text: String }) {
   return (
     <>
       <div className='cardCont'>{text}</div>

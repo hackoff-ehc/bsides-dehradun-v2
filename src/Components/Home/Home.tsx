@@ -18,9 +18,12 @@ export default function Landing() {
         <Hero />
       </div>
       <Community />
+
+      
       <Interest/>
       <Features/>
       <Form/>
+
       <Footer />
     </>
   );

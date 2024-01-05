@@ -53,7 +53,7 @@ function HamburgerNavbar() {
   const [left, setLeft] = useState<string>('110%');
   useEffect(() => {
     setLeft(burger ? '0%' : '110%');
-  }, []);
+  }, [burger]);
 
   return (
     <>

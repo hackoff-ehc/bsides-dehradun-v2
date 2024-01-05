@@ -1,0 +1,57 @@
+.toggleBurger{
+    height: 30px;
+    background-color: blue;
+    width: 40px;
+    margin-left: 85%;
+}
+.toggleBurger>svg{
+    height: 30px;
+    color: white;
+    width: 40px;
+}
+.burgerPage{
+    position: fixed;
+    height: 100vh;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+    background-color: grey;
+    transition: 0.8s;
+}
+.burtoggle{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 18px;
+    align-items: flex-start;
+}
+.burLogo{
+    height: 40px;
+    
+}
+.closeIcon{
+    height: 40px;
+}
+.tickets{
+    height: 60px;
+    width: 60%;
+    background-color: rgba(97, 4, 215, 1);
+    color: white;
+    margin-left: 20%;
+    border-radius: 15px;
+    font-family: var(--poppins);
+    font-weight: 700;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.burContent{
+
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-left: 10%;
+    height: auto;
+}

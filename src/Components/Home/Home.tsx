@@ -13,7 +13,7 @@ export default function Landing() {
         <Hero />
       </div>
       <Community />
-      <Form/>
+      <Form />
       <Footer />
     </>
   );

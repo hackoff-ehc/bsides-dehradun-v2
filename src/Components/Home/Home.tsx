@@ -1,7 +1,12 @@
 import Community from '../Community/Community';
+import { Features } from '../Features/Features';
 import Footer from '../Footer/Footer';
 import Hero from '../Hero/Hero';
+
+import { Interest } from '../Interests/Interests';
+
 import Form from '../ConnectForm/Form';
+
 import Navbar from '../Navbar/Navbar';
 import './Home.css';
 
@@ -13,7 +18,12 @@ export default function Landing() {
         <Hero />
       </div>
       <Community />
-      <Form />
+
+      
+      <Interest/>
+      <Features/>
+      <Form/>
+
       <Footer />
     </>
   );

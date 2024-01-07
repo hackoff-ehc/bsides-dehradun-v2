@@ -19,10 +19,9 @@ export default function Landing() {
       </div>
       <Community />
 
-      
-      <Interest/>
-      <Features/>
-      <Form/>
+      <Interest />
+      <Features />
+      <Form />
 
       <Footer />
     </>

@@ -56,9 +56,9 @@ const interestCards = [
 export const Interest = () => {
   return (
     <section className='px-3 md:px-[clamp(48px,7.78vw,112px)] py-4 md:py-8 lg:py-12'>
-      <h2 className='text-white text-[36px] sm:text-[48px] md:text-[clamp(56px,4.44vw,64px)] font-semibold mb-4 sm:mb-8 md:mb-[clamp(64px,5.56vw,80px)]'>
+      <h1 className='text-white h1-text font-semibold mb-4 sm:mb-8 md:mb-[clamp(64px,5.56vw,80px)]'>
         Show your interest
-      </h2>
+      </h1>
       <div className='grid gap-6 md:grid-cols-3'>
         {interestCards.map((details, index) => (
           <Card key={details.title} {...details} index={`0${index + 1}`} />

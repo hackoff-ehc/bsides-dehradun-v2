@@ -140,42 +140,38 @@ const Form = () => {
         allowFullScreen=''
         loading='lazy'
         referrerPolicy='no-referrer-when-downgrade'
-      ></iframe>
-
-      <div className='w-full p-10 text-white'>
-        <h1 className='text-4xl font-semibold m-5 md:m-10'>Let&apos;s connect</h1>
-
-        <div className='w-full md:w-[60%] lg:w-[45%] rounded-xl backdrop-blur-lg shadow-sm shadow-white m-auto lg:ms-36 '>
-          <div className='flex gap-3 px-10 pt-8'>
-            <div
+      />
+      <div className='px-3 md:px-[clamp(48px,7.78vw,112px)] py-4 md:py-8 lg:py-12 text-white text-[14px] md:text-[16px]'>
+        <h1 className='h1-text font-semibold mb-5 md:mb-10'>Let&apos;s connect</h1>
+        <div className='w-fit bg-[#30303080] rounded-[10px] backdrop-blur-[15px] fill-[rgba(48,48,48,0.50)] m-auto lg:ms-36 px-3 pt-5 pb-4 md:pt-[clamp(30px,3vw,60px)] md:pb-[clamp(20px,2vw,40px)] md:px-[clamp(12px,1.667vw,24px)]'>
+          <div className='flex flex-wrap gap-2 md:gap-4 mb-2 md:mb-5'>
+            <button
               onClick={() => {
                 setInnerForm(true);
               }}
               className={` ${
-                innerForm ? 'bg-violet-800' : 'bg-transparent'
-              } px-3 py-2  w-full  border border-[#6104D7] shadow-2xl rounded-full hover:scale-[1.01] cursor-pointer my-3 text-center  inline-flex items-center`}
+                innerForm ? 'bg-[#6104D7] text-white' : 'bg-white text-black'
+              } py-2 md:py-4 px-4 md:px-6 border border-[#6104D7] shadow-2xl rounded-full flex items-center justify-center gap-2 flex-grow`}
             >
-              massege us directly <IoIosInformationCircleOutline className=' m-1' />
-            </div>
-            <div
+              <span>message us directly</span> <IoIosInformationCircleOutline className='text-xl' />
+            </button>
+            <button
               onClick={() => {
                 setInnerForm(false);
               }}
               className={` ${
-                innerForm ? 'bg-transparent' : 'bg-violet-800'
-              } px-3 py-2  w-full  border border-[#6104D7] shadow-2xl rounded-full hover:scale-[1.01] cursor-pointer my-3 inline-flex items-center`}
+                innerForm ? 'bg-white text-black' : 'bg-[#6104D7] text-white'
+              } py-2 md:py-4 px-4 md:px-6 border border-[#6104D7] shadow-2xl rounded-full flex items-center justify-center gap-2 flex-grow`}
             >
-              schdule a meet <IoIosInformationCircleOutline className='m-1' />
-            </div>
+              <span>schedule a meet</span> <IoIosInformationCircleOutline className='text-xl' />
+            </button>
           </div>
           {innerForm ? (
-            <form onSubmit={handleSubmit} action='#' className='px-8 p-5 space-y-5'>
-              <div>
-                <label htmlFor='name' className='text-base font-medium'>
-                  Name
-                </label>
+            <form onSubmit={handleSubmit} action='#' className='space-y-4'>
+              <div className='flex flex-col'>
+                <label htmlFor='name'>Name</label>
                 <input
-                  className='mt-2 h-10 w-full rounded-md border-2 border-white bg-black ps-3 py-1 text-sm placeholder:text-gray-400 focus:ring-2 focus:ring-[#6104D7]'
+                  className='mt-2 block rounded-md border-2 border-white bg-black px-3 py-3 placeholder:text-gray-400 focus:ring-2 focus:ring-[#6104D7]'
                   type='text'
                   style={error.name ? { border: '2px solid red' } : { border: 'inherit' }}
                   name='name'
@@ -186,12 +182,10 @@ const Form = () => {
                 ></input>
                 <p className='text-red-800 text-sm mb-0'>{error.name}</p>
               </div>
-              <div>
-                <label htmlFor='email' className='text-base font-medium'>
-                  Email
-                </label>
+              <div className='flex flex-col'>
+                <label htmlFor='email'>Email</label>
                 <input
-                  className='mt-2 h-10 w-full rounded-md border border-white bg-black ps-3 py-1 text-sm placeholder:text-gray-400 focus:ring-2 focus:ring-[#6104D7]'
+                  className='mt-2 block rounded-md border border-white bg-black px-3 py-3 placeholder:text-gray-400 focus:ring-2 focus:ring-[#6104D7]'
                   type='email'
                   name='email'
                   placeholder='Email'
@@ -202,12 +196,10 @@ const Form = () => {
                 ></input>
                 <p className='text-red-800 text-sm mb-0'>{error.email}</p>
               </div>
-              <div>
-                <label htmlFor='company' className='text-base font-medium'>
-                  Company
-                </label>
+              <div className='flex flex-col'>
+                <label htmlFor='company'>Company</label>
                 <input
-                  className='mt-2 h-10 w-full rounded-md border border-white bg-black ps-3 py-1 text-sm placeholder:text-gray-400 focus:ring-2 focus:ring-[#6104D7]'
+                  className='mt-2 block rounded-md border border-white bg-black px-3 py-3 placeholder:text-gray-400 focus:ring-2 focus:ring-[#6104D7]'
                   type='text'
                   name='company'
                   placeholder='Company name'
@@ -218,12 +210,10 @@ const Form = () => {
                 ></input>
                 <p className='text-red-800 text-sm mb-0'>{error.company}</p>
               </div>
-              <div>
-                <label htmlFor='subject' className='text-base font-medium'>
-                  Subject
-                </label>
+              <div className='flex flex-col'>
+                <label htmlFor='subject'>Subject</label>
                 <input
-                  className='mt-2 h-10 w-full rounded-md border border-white bg-black ps-3 py-1 text-sm placeholder:text-gray-400 focus:ring-2 focus:ring-[#6104D7]'
+                  className='mt-2 block rounded-md border border-white bg-black px-3 py-3 placeholder:text-gray-400 focus:ring-2 focus:ring-[#6104D7]'
                   type='text'
                   style={error.help ? { border: '2px solid red' } : { border: 'inherit' }}
                   name='subject'
@@ -234,38 +224,31 @@ const Form = () => {
                 ></input>
                 <p className='text-red-800 text-sm mb-0'>{error.help}</p>
               </div>
-              <div>
-                <label htmlFor='textarea' className='text-base font-medium'>
-                  Messege
-                </label>
-                <div className=''>
-                  <textarea
-                    className='mt-2 h-200 w-full rounded-md bg-black p-3 text-sm placeholder:text-gray-400 focus:ring-2 focus:ring-[#6104D7] outline-none border border-white'
-                    rows='5'
-                    type='text'
-                    style={error.des ? { border: '2px solid red' } : { border: 'inherit' }}
-                    name='textarea'
-                    placeholder='Your messege'
-                    onChange={(e) => {
-                      setDes(e.target.value);
-                    }}
-                  ></textarea>
-                  <p className='text-red-800 text-sm mb-0'>{error.des}</p>
-                </div>
+              <div className='flex flex-col'>
+                <label htmlFor='textarea'>Message</label>
+                <textarea
+                  className='mt-2 resize-none block rounded-md bg-black p-3 placeholder:text-gray-400 focus:ring-2 focus:ring-[#6104D7] outline-none border border-white'
+                  rows='5'
+                  type='text'
+                  style={error.des ? { border: '2px solid red' } : { border: 'inherit' }}
+                  name='textarea'
+                  placeholder='Your messege'
+                  onChange={(e) => {
+                    setDes(e.target.value);
+                  }}
+                ></textarea>
+                <p className='text-red-800 text-sm mb-0'>{error.des}</p>
               </div>
-
-              <div className='text-center'>
-                <input
-                  style={{ border: '1px solid #6104D7' }}
-                  type='submit'
-                  value='SEND MESSAGE'
-                  className='border-2 w-52 m-auto text-sm backdrop-blur-lg text-center p-3 rounded-xl my-5 backdrop:blur-xl cursor-pointer hover:bg-violet-800 '
-                ></input>
-              </div>
+              <button
+                type='submit'
+                className='block mx-auto mt-3 md:mt-5 text-sm backdrop-blur-lg text-center py-3 px-4 rounded-xl border-2 border-solid border-[#6104D7] backdrop:blur-xl hover:bg-violet-800 '
+              >
+                SEND MESSAGE
+              </button>
             </form>
           ) : (
             <div className='px-8 p-5 text-center'>
-              <Image src={MeetingImg} alt='Loading img...' />
+              <Image src={MeetingImg} alt='Loading img...' className='max-w-full' />
               <h2 className='text-3xl font-semibold my-8'>Plane ahead</h2>
               <p className='text-sm P-10'>
                 Click the button below to schedule a meeting with the BSides Dehradun team.

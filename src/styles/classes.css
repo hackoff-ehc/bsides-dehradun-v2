@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .h1-text {
+    @apply text-[36px] sm:text-[48px] md:text-[clamp(56px,4.44vw,64px)];
+  }
+}

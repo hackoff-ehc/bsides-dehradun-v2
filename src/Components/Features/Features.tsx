@@ -3,9 +3,9 @@ const featuresCards = ['Keynotes and talks', 'Panel discussions', 'CTF competiti
 export const Features = () => {
   return (
     <section className='px-3 md:px-[clamp(48px,7.78vw,112px)] py-4 md:py-8 lg:py-12'>
-      <h2 className='text-white text-[36px] sm:text-[48px] md:text-[clamp(56px,4.44vw,64px)] font-semibold mb-4 sm:mb-8 md:mb-[clamp(64px,5.56vw,80px)]'>
+      <h1 className='text-white h1-text font-semibold mb-4 sm:mb-8 md:mb-[clamp(64px,5.56vw,80px)]'>
         BSides confrences feature
-      </h2>
+      </h1>
       <div className='flex flex-col gap-9 md:gap-[104px] md:max-w-[85%] mx-auto md:flex-row'>
         <div>
           <p className='text-[#fff7] md:mb-[120px] max-w-[35ch] text-[16px] md:text-[20px]'>

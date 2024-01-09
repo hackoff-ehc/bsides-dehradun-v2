@@ -12,7 +12,6 @@ import { VscArrowCircleUp } from 'react-icons/vsc';
 const Footer = () => {
   return (
     <footer className='w-full'>
-      lorem3000
       <div className=' text-white block lg:grid grid-cols-2 pt-16 p-10 sm:px-20 border-t-4 border-violet-900'>
         <div className='w-full lg:p-10'>
           <Link href='/coming-soon'>

@@ -148,5 +148,5 @@ export default function Navbar() {
     }
   }, []);
 
-  return <>{width > 500 ? <LongNavbar /> : <HamburgerNavbar />}</>;
+  return <>{width > 920 ? <LongNavbar /> : <HamburgerNavbar />}</>;
 }

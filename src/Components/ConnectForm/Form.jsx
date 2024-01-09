@@ -143,7 +143,7 @@ const Form = () => {
       />
       <div className='px-3 md:px-[clamp(48px,7.78vw,112px)] py-4 md:py-8 lg:py-12 text-white text-[14px] md:text-[16px]'>
         <h1 className='h1-text font-semibold mb-5 md:mb-10'>Let&apos;s connect</h1>
-        <div className='w-fit bg-[#30303080] rounded-[10px] backdrop-blur-[15px] fill-[rgba(48,48,48,0.50)] m-auto lg:ms-36 px-3 pt-5 pb-4 md:pt-[clamp(30px,3vw,60px)] md:pb-[clamp(20px,2vw,40px)] md:px-[clamp(12px,1.667vw,24px)]'>
+        <div className='w-full sm:w-fit bg-[#30303080] rounded-[10px] backdrop-blur-[15px] fill-[rgba(48,48,48,0.50)] m-auto md:ml-[5rem] px-3 pt-5 pb-4 md:pt-[clamp(30px,3vw,60px)] md:pb-[clamp(20px,2vw,40px)] md:px-[clamp(12px,1.667vw,24px)] max-w-[515px]'>
           <div className='flex flex-wrap gap-2 md:gap-4 mb-2 md:mb-5'>
             <button
               onClick={() => {
@@ -167,7 +167,7 @@ const Form = () => {
             </button>
           </div>
           {innerForm ? (
-            <form onSubmit={handleSubmit} action='#' className='space-y-4'>
+            <form onSubmit={handleSubmit} action='#' className='space-y-2'>
               <div className='flex flex-col'>
                 <label htmlFor='name'>Name</label>
                 <input
@@ -180,7 +180,7 @@ const Form = () => {
                     setName(e.target.value);
                   }}
                 ></input>
-                <p className='text-red-800 text-sm mb-0'>{error.name}</p>
+                <p className='text-[#a50000] text-sm mb-0 mt-[2px]'>{error.name}</p>
               </div>
               <div className='flex flex-col'>
                 <label htmlFor='email'>Email</label>
@@ -194,7 +194,7 @@ const Form = () => {
                     setEmail(e.target.value);
                   }}
                 ></input>
-                <p className='text-red-800 text-sm mb-0'>{error.email}</p>
+                <p className='text-[#a50000] text-sm mb-0 mt-[2px]'>{error.email}</p>
               </div>
               <div className='flex flex-col'>
                 <label htmlFor='company'>Company</label>
@@ -208,7 +208,7 @@ const Form = () => {
                     setCompany(e.target.value);
                   }}
                 ></input>
-                <p className='text-red-800 text-sm mb-0'>{error.company}</p>
+                <p className='text-[#a50000] text-sm mb-0 mt-[2px]'>{error.company}</p>
               </div>
               <div className='flex flex-col'>
                 <label htmlFor='subject'>Subject</label>
@@ -222,13 +222,14 @@ const Form = () => {
                     setHelp(e.target.value);
                   }}
                 ></input>
-                <p className='text-red-800 text-sm mb-0'>{error.help}</p>
+                <p className='text-[#a50000] text-sm mb-0 mt-[2px]'>{error.help}</p>
               </div>
               <div className='flex flex-col'>
                 <label htmlFor='textarea'>Message</label>
                 <textarea
                   className='mt-2 resize-none block rounded-md bg-black p-3 placeholder:text-gray-400 focus:ring-2 focus:ring-[#6104D7] outline-none border border-white'
-                  rows='5'
+                  rows={3}
+                  maxLength={200}
                   type='text'
                   style={error.des ? { border: '2px solid red' } : { border: 'inherit' }}
                   name='textarea'
@@ -237,11 +238,11 @@ const Form = () => {
                     setDes(e.target.value);
                   }}
                 ></textarea>
-                <p className='text-red-800 text-sm mb-0'>{error.des}</p>
+                <p className='text-[#a50000] text-sm mb-0 mt-[2px]'>{error.des}</p>
               </div>
               <button
                 type='submit'
-                className='block mx-auto mt-3 md:mt-5 text-sm backdrop-blur-lg text-center py-3 px-4 rounded-xl border-2 border-solid border-[#6104D7] backdrop:blur-xl hover:bg-violet-800 '
+                className='block mx-auto !mt-3 md:!mt-5 text-sm backdrop-blur-lg text-center py-3 px-4 rounded-xl border-2 border-solid border-[#6104D7] backdrop:blur-xl hover:bg-violet-800 '
               >
                 SEND MESSAGE
               </button>
@@ -253,7 +254,7 @@ const Form = () => {
               <p className='text-sm P-10'>
                 Click the button below to schedule a meeting with the BSides Dehradun team.
               </p>
-              <div className='border-2 w-52 text-sm backdrop-blur-lg border-[#6104D7] text-center p-3 rounded-xl md:mx-auto my-5 cursor-pointer   bg-violet-800 '>
+              <div className='block mx-auto border-2 w-52 text-sm backdrop-blur-lg border-[#6104D7] text-center p-3 rounded-xl my-5 cursor-pointer   bg-violet-800 '>
                 <Link href='/coming-soon'>BOOK A MEETING</Link>
               </div>
             </div>

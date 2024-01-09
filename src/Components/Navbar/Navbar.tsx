@@ -58,6 +58,7 @@ function HamburgerNavbar() {
   return (
     <>
       <div className='burgerContainer'>
+        <Image src={Logo} alt='No Logo Found' />
         <button className='toggleBurger' onClick={toggleBurger}>
           <GiHamburgerMenu />
         </button>

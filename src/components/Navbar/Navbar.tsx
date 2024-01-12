@@ -45,7 +45,7 @@ export const LongNavbar = () => {
   return (
     <div className='bgCont absolute left-0 right-0 top-[-14vh]'>
       <motion.header
-        className='flex justify-between items-center fixed bg-[rgba(182,182,182,0.50)] rounded-xl w-5/6 mx-auto px-3 py-2 left-1/2 -translate-x-1/2 text-white font-bold top-[24px]'
+        className='flex justify-between items-center fixed bg-[#30303080] backdrop-blur-[15px] fill-[rgba(48,48,48,0.50)] rounded-xl w-5/6 mx-auto px-3 py-2 left-1/2 -translate-x-1/2 text-white font-bold top-[24px]'
         initial={{ top: 24 }}
         animate={{ top: headerTop }}
       >

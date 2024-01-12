@@ -3,8 +3,8 @@ import Link from 'next/link';
 
 const Community = () => {
   return (
-    <div className='w-full md:text-center text-white p-10 lg:px-40 py-24 mt-96 pt-96'>
-      <h1 className='text-4xl md:text-5xl font-semibold leading-20 md:leading-[60px]'>
+    <section className='w-full md:text-center text-white px-3 md:px-[clamp(48px,7.78vw,112px)] py-4 md:py-8 lg:py-12 mt-[100vh]'>
+      <h1 className='h1-text font-semibold leading-20 md:leading-[60px]'>
         A Conference for and by
         <br />
         <span className='text-[#6104D7] font-bold'>Cybersecurity</span> community.
@@ -17,7 +17,7 @@ const Community = () => {
       <div className='border-2 backdrop-blur-lg border-[#6104D7] max-w-[120px] text-center p-3 rounded-xl md:mx-auto my-5 cursor-pointer hover:bg-violet-900 hover:scale-105 shadow-2xl hover:shadow-violet-800 hover:border-2'>
         <Link href='/coming-soon'>About Us</Link>
       </div>
-    </div>
+    </section>
   );
 };
 

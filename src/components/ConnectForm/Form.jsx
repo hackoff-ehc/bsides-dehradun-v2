@@ -175,6 +175,7 @@ const Form = () => {
                   type='text'
                   style={error.name ? { border: '2px solid red' } : { border: 'inherit' }}
                   name='name'
+                  id='name'
                   placeholder='Full name'
                   onChange={(e) => {
                     setName(e.target.value);
@@ -188,7 +189,8 @@ const Form = () => {
                   className='mt-2 block rounded-md border border-white bg-black px-3 py-3 placeholder:text-gray-400 focus:ring-2 focus:ring-[#6104D7]'
                   type='email'
                   name='email'
-                  placeholder='Email'
+                  id='email'
+                  placeholder='you@company.com'
                   style={error.email ? { border: '2px solid red' } : { border: 'inherit' }}
                   onChange={(e) => {
                     setEmail(e.target.value);
@@ -202,6 +204,7 @@ const Form = () => {
                   className='mt-2 block rounded-md border border-white bg-black px-3 py-3 placeholder:text-gray-400 focus:ring-2 focus:ring-[#6104D7]'
                   type='text'
                   name='company'
+                  id='company'
                   placeholder='Company name'
                   style={error.company ? { border: '2px solid red' } : { border: 'inherit' }}
                   onChange={(e) => {
@@ -217,6 +220,7 @@ const Form = () => {
                   type='text'
                   style={error.help ? { border: '2px solid red' } : { border: 'inherit' }}
                   name='subject'
+                  id='subject'
                   placeholder='How can we help?'
                   onChange={(e) => {
                     setHelp(e.target.value);
@@ -225,14 +229,15 @@ const Form = () => {
                 <p className='text-[#a50000] text-sm mb-0 mt-[2px]'>{error.help}</p>
               </div>
               <div className='flex flex-col'>
-                <label htmlFor='textarea'>Message</label>
+                <label htmlFor='message'>Message</label>
                 <textarea
                   className='mt-2 resize-none block rounded-md bg-black p-3 placeholder:text-gray-400 focus:ring-2 focus:ring-[#6104D7] outline-none border border-white'
                   rows={3}
                   maxLength={200}
                   type='text'
                   style={error.des ? { border: '2px solid red' } : { border: 'inherit' }}
-                  name='textarea'
+                  name='message'
+                  id='message'
                   placeholder='Your messege'
                   onChange={(e) => {
                     setDes(e.target.value);

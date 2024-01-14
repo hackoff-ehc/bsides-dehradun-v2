@@ -6,4 +6,33 @@
   .h1-text {
     @apply text-[36px] sm:text-[48px] md:text-[clamp(56px,4.44vw,64px)];
   }
+
+  .h2-text {
+    @apply text-[20px] sm:text-[28px] md:text-[clamp(36px,3.33vw,48px)];
+  }
+
+  .primary-btn {
+    background-blend-mode: color-dodge, lighten, color-dodge, lighten;
+    @apply relative overflow-hidden shadow-[4px_4px_10px_0px_rgba(0,0,0,0.25)];
+    @apply text-[12px] text-center;
+    @apply border-[1px] border-solid border-[#6104D7] rounded-[16px];
+    @apply py-3 px-[20px];
+    @apply sm:text-[14px];
+    @apply md:border-[2px] md:text-[16px] md:py-4 md:px-[34px] md:rounded-[24px];
+    @apply transition-shadow hover:shadow-[4px_6px_16px_0px_rgba(0,0,0,0.4)];
+  }
+
+  .primary-btn::before {
+    aspect-ratio: 1;
+    background: linear-gradient(180deg, #fff1, #ffffff26);
+    content: '';
+    position: absolute;
+    inset: -50%;
+    transform: rotate(90deg);
+    transition: all 0.5s;
+  }
+
+  .primary-btn:hover::before {
+    transform: rotate(240deg);
+  }
 }

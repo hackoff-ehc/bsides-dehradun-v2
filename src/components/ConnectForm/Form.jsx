@@ -245,11 +245,8 @@ const Form = () => {
                 ></textarea>
                 <p className='text-[#a50000] text-sm mb-0 mt-[2px]'>{error.des}</p>
               </div>
-              <button
-                type='submit'
-                className='block mx-auto !mt-3 md:!mt-5 text-sm backdrop-blur-lg text-center py-3 px-4 rounded-xl border-2 border-solid border-[#6104D7] backdrop:blur-xl hover:bg-violet-800 '
-              >
-                SEND MESSAGE
+              <button type='submit' className='primary-btn block mx-auto !mt-3 md:!mt-5'>
+                Send Message
               </button>
             </form>
           ) : (
@@ -259,8 +256,8 @@ const Form = () => {
               <p className='text-sm P-10'>
                 Click the button below to schedule a meeting with the BSides Dehradun team.
               </p>
-              <div className='block mx-auto border-2 w-52 text-sm backdrop-blur-lg border-[#6104D7] text-center p-3 rounded-xl my-5 cursor-pointer   bg-violet-800 '>
-                <Link href='/coming-soon'>BOOK A MEETING</Link>
+              <div className='primary-btn block mx-auto'>
+                <Link href='/coming-soon'>Book a meeting</Link>
               </div>
             </div>
           )}

@@ -29,6 +29,6 @@
     ".next/types/**/*.ts",
     "src/**/**/*.tsx",
     "src/**/**/*.ts"
-  ],
+, "src/components/ConnectForm/Form2.jsx"  ],
   "exclude": ["node_modules"]
 }

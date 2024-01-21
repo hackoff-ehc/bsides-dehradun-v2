@@ -5,7 +5,7 @@ import Hero from '../Hero/Hero';
 
 import { Interest } from '../Interests/Interests';
 
-import Form from '../ConnectForm/Form';
+import Form from '../ConnectForm/Form2';
 
 import Navbar from '../Navbar/Navbar';
 import './Home.css';

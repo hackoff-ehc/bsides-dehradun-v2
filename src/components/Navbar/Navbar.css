@@ -31,7 +31,7 @@
     cursor: pointer;
 }
 .getTicket{
-   background: rgba(97, 4, 215, 1);
+   
     height: 60px;
     width: fit-content;
     padding: 15px;
@@ -126,7 +126,7 @@
 .tickets{
     height: 60px;
     width: 60%;
-    background-color: rgba(97, 4, 215, 1);
+    /* background-color: rgba(97, 4, 215, 1); */
     color: white;
     margin-left: 20%;
     border-radius: 15px;

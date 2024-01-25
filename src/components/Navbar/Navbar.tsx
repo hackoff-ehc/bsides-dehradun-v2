@@ -45,7 +45,7 @@ export const LongNavbar = () => {
   return (
     <div className='bgCont absolute left-0 right-0 top-[-14vh]'>
       <motion.header
-        className='flex justify-between items-center fixed bg-[#30303080] backdrop-blur-[15px] fill-[rgba(48,48,48,0.50)] rounded-xl w-5/6 mx-auto px-3 py-2 left-1/2 -translate-x-1/2 text-white font-bold top-[24px]'
+        className='flex justify-between items-center border border-solid border-white fixed bg-[#FFFFFF]/20 backdrop-blur-[15px] fill-[rgba(48,48,48,0.50)] rounded-xl w-5/6 mx-auto px-3 py-2 left-1/2 -translate-x-1/2 text-white font-bold top-[24px]'
         initial={{ top: 24 }}
         animate={{ top: headerTop }}
       >
@@ -63,7 +63,7 @@ export const LongNavbar = () => {
               {link.menu ? <Image src={down} alt='Menu' /> : null}
             </Link>
           ))}
-          <button className='text-center uppercase py-4 px-5 rounded-full bg-[#6104D7]'>
+          <button className='text-center primary-btn uppercase py-4 px-5 rounded-[10px] '>
             GET YOUR TICKETS
           </button>
         </nav>
@@ -120,7 +120,7 @@ function HamburgerNavbar() {
               <div className='navburcon'>CONTACT US </div>
             </Link>
           </div>
-          <button className='tickets'> Get Your Tickets </button>
+          <button className='tickets primary-btn'> Get Your Tickets </button>
         </div>
       </div>
     </>

@@ -135,8 +135,8 @@ const Form = () => {
         Let&apos;s connect
       </h1>
       <div className='formContainer'>
-        <div className='formCon'>
-          <div className='px-2 md:px-[clamp(48px,7.78vw,70px)] py-4 md:py-8 lg:py-12 text-white text-[14px] md:text-[16px]'>
+        <div className='formCon w-[100%] md:w-[50%] h-full lg:h-[80%] '>
+          <div className='px-2 md:px-[clamp(48px,7.78vw,70px)] py-4 md:py-0 lg:py-12 text-white text-[14px] md:text-[16px]'>
             <div className='flex flex-wrap gap-2 md:gap-4 mb-2 md:mb-5'>
               <button
                 onClick={() => {
@@ -146,7 +146,7 @@ const Form = () => {
                   innerForm ? 'bg-[#6104D7] text-white' : 'bg-white text-black'
                 } py-2 md:py-4 px-4 md:px-6 border border-[#6104D7] shadow-2xl rounded-full flex items-center justify-center gap-2 flex-grow`}
               >
-                <span>message us directly</span>
+                <span>Message Us Directly</span>
                 <IoIosInformationCircleOutline className='text-xl' />
               </button>
               <button
@@ -157,11 +157,11 @@ const Form = () => {
                   innerForm ? 'bg-white text-black' : 'bg-[#6104D7] text-white'
                 } py-2 md:py-4 px-4 md:px-6 border border-[#6104D7] shadow-2xl rounded-full flex items-center justify-center gap-2 flex-grow`}
               >
-                <span>schedule a meet</span> <IoIosInformationCircleOutline className='text-xl' />
+                <span>Scheedule a Meet</span> <IoIosInformationCircleOutline className='text-xl' />
               </button>
             </div>
             {innerForm ? (
-              <form onSubmit={handleSubmit} action='#' className='space-y-2'>
+              <form onSubmit={handleSubmit} action='#' className='space-y-2 lg:my-[10%]'>
                 <div className='flex flex-col'>
                   <label htmlFor='name'>Name</label>
                   <input
@@ -239,17 +239,18 @@ const Form = () => {
                   ></textarea>
                   <p className='text-[#a50000] text-sm mb-0 mt-[2px]'>{error.des}</p>
                 </div>
-                <button type='submit' className='primary-btn block mx-auto !mt-3 md:!mt-5'>
+                <button type='submit' className='primary-btn w-[40%] block mx-auto !mt-3 md:!mt-5'>
                   Send Message
                 </button>
               </form>
             ) : (
-              <div className='px-8 p-5 text-center'>
+              <div className='my-[10vh]  text-center h-[80%]'>
                 <Image
                   src={MeetingImg}
                   alt='Loading img...'
-                  width={350}
-                  style={{ marginLeft: '18%' }}
+                  width={250}
+                  height={350}
+                  className='ml-[10%] md:ml-[25%]'
                 />
                 <h2 className='text-3xl font-semibold my-8'>Plane ahead</h2>
                 <p className='text-sm P-10'>
@@ -266,9 +267,7 @@ const Form = () => {
           <iframe
             src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16838.740662631302!2d78.02409859358902!3d30.32138836830718!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390929c356c888af%3A0x4c3562c032518799!2sDehradun%2C%20Uttarakhand!5e0!3m2!1sen!2sin!4v1703190907554!5m2!1sen!2sin'
             className='map'
-            width='600'
-            height='450'
-            style={{ border: '0' }}
+            style={{ border: '0', height: '100%' }}
             allowFullScreen=''
             loading='lazy'
             referrerPolicy='no-referrer-when-downgrade'

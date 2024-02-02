@@ -1,12 +1,12 @@
 'use client';
 import React, { useState, useEffect } from 'react';
-import MeetingImg from '../../assets/Meeting.png';
+import MeetingImg from '@/assets/Meeting.png';
 import Link from 'next/link';
 import Image from 'next/image';
 import { IoIosInformationCircleOutline } from 'react-icons/io';
 import './Form.css';
 
-const Form = () => {
+export const Connect = () => {
   const [innerForm, setInnerForm] = useState(true);
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -64,7 +64,7 @@ const Form = () => {
     // console.log(error)
   }, [email, name, des, help, company]);
 
-  const handleSubmit = async (event) => {
+  const handleSubmit = async (event: any) => {
     event.preventDefault();
     const blockedDomains = ['gmail.com', 'outlook.com', 'yahoo.com'];
     const domain = email.split('@')[1];
@@ -130,23 +130,21 @@ const Form = () => {
     }
   };
   return (
-    <>
-      <h1 className='h1-text font-semibold mb-5 md:mb-10 px-10 md:px-[clamp(80px,7.9vw,112px)] py-4 md:py-8 lg:py-12 text-white '>
-        Let&apos;s connect
-      </h1>
-      <div className='formContainer'>
+    <section className='section-padding text-white'>
+      <h1 className='h1-text font-semibold mb-5 md:mb-10'>Let&apos;s connect</h1>
+      <div className='grid grid-rows-2 md:grid-rows-1 md:grid-cols-2 gap-[40px] rounded-[10px] bg-[#5e5e5e24] fill-[#5e5e5e24] backdrop-blur-[2.5px] stroke-[1.5px] stroke-[#ffffff5c] p-4 md:p-[40px]'>
         <div className='formCon'>
-          <div className='px-2 md:px-[clamp(48px,7.78vw,70px)] py-4 md:py-8 lg:py-12 text-white text-[14px] md:text-[16px]'>
-            <div className='flex flex-wrap gap-2 md:gap-4 mb-2 md:mb-5'>
+          <div className='text-[14px] md:text-[16px]'>
+            <div className='flex flex-wrap gap-2 md:gap-4 mb-4 md:mb-5'>
               <button
                 onClick={() => {
                   setInnerForm(true);
                 }}
                 className={` ${
                   innerForm ? 'bg-[#6104D7] text-white' : 'bg-white text-black'
-                } py-2 md:py-4 px-4 md:px-6 border border-[#6104D7] shadow-2xl rounded-full flex items-center justify-center gap-2 flex-grow`}
+                } py-3 px-4 md:py-4 md:px-6 border border-[#6104D7] shadow-2xl rounded-full flex items-center justify-center gap-2 flex-grow`}
               >
-                <span>message us directly</span>
+                <span>Message us directly</span>
                 <IoIosInformationCircleOutline className='text-xl' />
               </button>
               <button
@@ -157,7 +155,7 @@ const Form = () => {
                   innerForm ? 'bg-white text-black' : 'bg-[#6104D7] text-white'
                 } py-2 md:py-4 px-4 md:px-6 border border-[#6104D7] shadow-2xl rounded-full flex items-center justify-center gap-2 flex-grow`}
               >
-                <span>schedule a meet</span> <IoIosInformationCircleOutline className='text-xl' />
+                <span>Schedule a meet</span> <IoIosInformationCircleOutline className='text-xl' />
               </button>
             </div>
             {innerForm ? (
@@ -228,7 +226,6 @@ const Form = () => {
                     className='mt-2 resize-none block rounded-md bg-black p-3 placeholder:text-gray-400 focus:ring-2 focus:ring-[#6104D7] outline-none border border-white'
                     rows={3}
                     maxLength={200}
-                    type='text'
                     style={error.des ? { border: '2px solid red' } : { border: 'inherit' }}
                     name='message'
                     id='message'
@@ -239,25 +236,18 @@ const Form = () => {
                   ></textarea>
                   <p className='text-[#a50000] text-sm mb-0 mt-[2px]'>{error.des}</p>
                 </div>
-                <button type='submit' className='primary-btn block mx-auto !mt-3 md:!mt-5'>
+                <button type='submit' className='primary-btn block mx-auto !mt-3 md:!mt-8'>
                   Send Message
                 </button>
               </form>
             ) : (
-              <div className='px-8 p-5 text-center'>
-                <Image
-                  src={MeetingImg}
-                  alt='Loading img...'
-                  width={350}
-                  style={{ marginLeft: '18%' }}
-                />
-                <h2 className='text-3xl font-semibold my-8'>Plane ahead</h2>
-                <p className='text-sm P-10'>
+              <div className='text-center'>
+                <Image src={MeetingImg} alt='Loading img...' width={350} className='mx-auto' />
+                <h2 className='text-3xl font-semibold my-8'>Plan ahead</h2>
+                <p className='para-text'>
                   Click the button below to schedule a meeting with the BSides Dehradun team.
                 </p>
-                <div className='primary-btn block mx-auto'>
-                  <Link href='/coming-soon'>Book a meeting</Link>
-                </div>
+                <button className='primary-btn block mx-auto !mt-3 md:!mt-8'>Book a meeting</button>
               </div>
             )}
           </div>
@@ -269,14 +259,12 @@ const Form = () => {
             width='600'
             height='450'
             style={{ border: '0' }}
-            allowFullScreen=''
+            allowFullScreen={false}
             loading='lazy'
             referrerPolicy='no-referrer-when-downgrade'
           />
         </div>
       </div>
-    </>
+    </section>
   );
 };
-
-export default Form;

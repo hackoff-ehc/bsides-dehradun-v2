@@ -2,21 +2,21 @@ const featuresCards = ['Keynotes and talks', 'Panel discussions', 'CTF competiti
 
 export const Features = () => {
   return (
-    <section className='px-3 md:px-[clamp(48px,7.78vw,112px)] py-4 md:py-8 lg:py-12'>
-      <h1 className='text-white h1-text font-semibold mb-4 sm:mb-8 md:mb-[clamp(64px,5.56vw,80px)]'>
+    <section className='section-padding'>
+      <h1 className='text-white h1-text font-semibold mb-4 sm:mb-4 md:mb-[36px]'>
         BSides confrences feature
       </h1>
-      <div className='flex flex-col gap-9 md:gap-[104px] md:max-w-[85%] mx-auto md:flex-row'>
+      <div className='flex flex-col gap-9 md:gap-[104px] md:flex-row'>
         <div>
-          <p className='text-[#fff7] md:mb-[120px] max-w-[35ch] text-[16px] md:text-[20px]'>
+          <p className='para-text md:mb-[66px] max-w-[35ch]'>
             The conference will be held one-days and will feature a variety of talks, workshops, and
             panels on a wide range of security topics.
           </p>
-          <button className='secondary-btn py-6 px-[24px] lg:px-[64px] xl:px-[104px] text-[20px] font-bold w-full box-border hidden md:block'>
+          <button className='primary-btn py-6 text-[20px] text-center font-bold w-3/4 box-border hidden md:block'>
             GET YOUR TICKETS
           </button>
         </div>
-        <div className='grow flex flex-col gap-5 md:gap-10 w-[80%] md:w-[unset] mx-auto md:max-w-max'>
+        <div className='grow flex flex-col gap-5 md:gap-10 w-full md:w-[unset] mx-auto md:max-w-max'>
           {featuresCards.map((title) => (
             <div
               key={title}

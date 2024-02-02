@@ -12,7 +12,7 @@ function Card({ text }: { text: String }) {
   );
 }
 
-export default function Hero() {
+export const Hero = () => {
   //for the 2024 part
   const texts: String[] = [
     'Threat Intelligence',
@@ -79,7 +79,7 @@ export default function Hero() {
           </Marquee>
         </div>
 
-        <div className='mainText'>
+        <div className='section-padding mainText'>
           <span ref={el} />
           <div className='subText'>
             <span className='date' ref={fl}></span>
@@ -101,4 +101,4 @@ export default function Hero() {
       </div>
     </>
   );
-}
+};

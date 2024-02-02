@@ -1,10 +1,13 @@
-import Landing from '../components/Home/Home';
+import { Community, Connect, Features, Hero, Interests } from '@/components/Home';
 
 export default function Home() {
   return (
     <main>
-      {' '}
-      <Landing />
+      <Hero />
+      <Community />
+      <Interests />
+      <Features />
+      <Connect />
     </main>
   );
 }

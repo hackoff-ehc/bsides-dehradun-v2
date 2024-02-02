@@ -9,7 +9,7 @@ import { BsTwitterX } from 'react-icons/bs';
 import { FaLinkedin } from 'react-icons/fa6';
 import Marquee from 'react-fast-marquee';
 
-const Footer = () => {
+export const Footer = () => {
   return (
     <footer className='w-full lg:grid grid-cols-2 bg-[#000000B0] text-white px-3 md:px-[clamp(48px,7.78vw,112px)] py-4 md:py-8 lg:py-12 relative z-10 overflow-hidden'>
       <div className='footer-bg-text-container -top-[35%]'>
@@ -104,5 +104,3 @@ const Footer = () => {
     </footer>
   );
 };
-
-export default Footer;

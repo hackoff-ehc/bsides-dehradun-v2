@@ -1,9 +1,9 @@
 'use client';
-import Logo from '../../assets/navLogo.png';
-import BurgerIC from '../../assets/menu_open.svg';
+import Logo from '@/assets/navLogo.png';
+import BurgerIC from '@/assets/menu_open.svg';
 import './Navbar.css';
 import { useState, useEffect, useRef } from 'react';
-import down from '../../assets/down.svg';
+import down from '@/assets/down.svg';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -125,7 +125,7 @@ function HamburgerNavbar() {
   );
 }
 
-export default function Navbar() {
+export const Navbar = () => {
   const [width, setWidth] = useState(0);
   useEffect(() => setWidth(window.innerWidth), []);
   useEffect(() => {
@@ -147,4 +147,4 @@ export default function Navbar() {
   }, []);
 
   return <>{width > 920 ? <LongNavbar /> : <HamburgerNavbar />}</>;
-}
+};

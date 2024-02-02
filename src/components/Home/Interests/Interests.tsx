@@ -11,7 +11,7 @@ interface ICard {
 
 const Card = ({ title, description, index, href, iconSrc }: ICard) => {
   return (
-    <div className='rounded-lg border border-solid border-[#EC0033] bg-[#0005] p-6 md:p-10 flex flex-col'>
+    <div className='rounded-lg border border-solid border-[#ffffff94] bg-[#ffffff24] backdrop-blur-[1px] p-6 md:p-10 flex flex-col'>
       <div className='flex items-center justify-between mb-2'>
         <span className='font-bold text-[clamp(26px,2.22vw,32px)] text-[#ffffff4d]'>{index}</span>
         <span className='aspect-square w-[48px] h-[48px] bg-[#EC0033] bg-opacity-30 rounded-full flex items-center justify-center pointer-events-none'>
@@ -31,13 +31,6 @@ const Card = ({ title, description, index, href, iconSrc }: ICard) => {
 
 const interestCards = [
   {
-    title: 'Call For Paper',
-    description:
-      "We happily open doors to researchers and hackers around the world to work on the 'next big thing' in security. We request everyone to submit their new research.",
-    iconSrc: '/assets/icons/call-for-paper.svg',
-    href: '#',
-  },
-  {
     title: 'Get your Tickets',
     description:
       'Tickets for BSides Dehradun 0x01 will go on sale in early January 2024. We encourage you to purchase your tickets early, as they are expected to sell out quickly.',
@@ -53,13 +46,13 @@ const interestCards = [
   },
 ];
 
-export const Interest = () => {
+export const Interests = () => {
   return (
     <section className='px-3 md:px-[clamp(48px,7.78vw,112px)] py-4 md:py-8 lg:py-12'>
       <h1 className='text-white h1-text font-semibold mb-4 sm:mb-8 md:mb-[clamp(64px,5.56vw,80px)]'>
         Show your interest
       </h1>
-      <div className='grid gap-6 md:grid-cols-3'>
+      <div className='grid gap-6 md:grid-cols-2'>
         {interestCards.map((details, index) => (
           <Card key={details.title} {...details} index={`0${index + 1}`} />
         ))}

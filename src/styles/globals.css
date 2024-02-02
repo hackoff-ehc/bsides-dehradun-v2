@@ -26,3 +26,8 @@ video {
 a {
   cursor: pointer;
 }
+
+body {
+  background-image: url('../assets/mainBG.svg');
+  background-color: black;
+}

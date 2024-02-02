@@ -12,7 +12,7 @@ export const Features = () => {
             The conference will be held one-days and will feature a variety of talks, workshops, and
             panels on a wide range of security topics.
           </p>
-          <button className='py-6 px-[24px] lg:px-[64px] xl:px-[104px] bg-[#6104D7] rounded-[24px] text-center text-white text-[20px] font-bold w-full box-border hidden md:block'>
+          <button className='secondary-btn py-6 px-[24px] lg:px-[64px] xl:px-[104px] text-[20px] font-bold w-full box-border hidden md:block'>
             GET YOUR TICKETS
           </button>
         </div>

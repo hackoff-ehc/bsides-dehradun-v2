@@ -8,7 +8,7 @@
   }
 
   .h2-text {
-    @apply text-[20px] sm:text-[28px] md:text-[clamp(36px,3.33vw,48px)];
+    @apply text-[24px] sm:text-[28px] md:text-[clamp(36px,3.33vw,48px)];
   }
 
   .primary-btn {
@@ -26,13 +26,38 @@
     aspect-ratio: 1;
     background: linear-gradient(180deg, #fff1, #ffffff26);
     content: '';
+    inset: -100%;
     position: absolute;
-    inset: -50%;
     transform: rotate(90deg);
     transition: all 0.5s;
+    z-index: -1;
   }
 
   .primary-btn:hover::before {
+    transform: rotate(240deg);
+  }
+
+  .secondary-btn {
+    @apply relative overflow-hidden;
+    @apply text-[12px] text-white text-center;
+    @apply rounded-full;
+    @apply py-3 px-[20px];
+    @apply sm:text-[14px];
+    @apply md:text-[16px] md:py-4 md:px-[34px] md:rounded-[24px];
+  }
+
+  .secondary-btn::before {
+    aspect-ratio: 1;
+    background: linear-gradient(90deg, rgb(84 25 160), rgb(77 3 170));
+    content: '';
+    inset: -100%;
+    position: absolute;
+    transform: rotate(90deg);
+    transition: all 0.5s;
+    z-index: -1;
+  }
+
+  .secondary-btn:hover::before {
     transform: rotate(240deg);
   }
 }

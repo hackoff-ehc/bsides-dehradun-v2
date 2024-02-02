@@ -130,10 +130,10 @@ const Form = () => {
   };
 
   return (
-    <>
+    <section className='px-3 md:px-[clamp(48px,7.78vw,112px)] py-4 md:py-8 lg:py-12 relative'>
       <iframe
         src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16838.740662631302!2d78.02409859358902!3d30.32138836830718!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390929c356c888af%3A0x4c3562c032518799!2sDehradun%2C%20Uttarakhand!5e0!3m2!1sen!2sin!4v1703190907554!5m2!1sen!2sin'
-        className='w-full absolute z-[-1] mt-[23%] '
+        className='w-full absolute z-[-1] mt-[23%] left-0 right-0'
         width='600'
         height='450'
         style={{ border: '0' }}
@@ -141,7 +141,7 @@ const Form = () => {
         loading='lazy'
         referrerPolicy='no-referrer-when-downgrade'
       />
-      <div className='px-3 md:px-[clamp(48px,7.78vw,112px)] py-4 md:py-8 lg:py-12 text-white text-[14px] md:text-[16px]'>
+      <div className='text-white text-[14px] md:text-[16px]'>
         <h1 className='h1-text font-semibold mb-5 md:mb-10'>Let&apos;s connect</h1>
         <div className='w-full sm:w-fit bg-[#30303080] rounded-[10px] backdrop-blur-[15px] fill-[rgba(48,48,48,0.50)] m-auto md:ml-[5rem] px-3 pt-5 pb-4 md:pt-[clamp(30px,3vw,60px)] md:pb-[clamp(20px,2vw,40px)] md:px-[clamp(12px,1.667vw,24px)] max-w-[515px]'>
           <div className='flex flex-wrap gap-2 md:gap-4 mb-2 md:mb-5'>
@@ -252,18 +252,18 @@ const Form = () => {
           ) : (
             <div className='px-8 p-5 text-center'>
               <Image src={MeetingImg} alt='Loading img...' className='max-w-full' />
-              <h2 className='text-3xl font-semibold my-8'>Plane ahead</h2>
+              <h2 className='text-3xl font-semibold mt-5 md:mt-8 mb-3 md:mb-4'>Plan ahead</h2>
               <p className='text-sm P-10'>
                 Click the button below to schedule a meeting with the BSides Dehradun team.
               </p>
-              <div className='primary-btn block mx-auto'>
-                <Link href='/coming-soon'>Book a meeting</Link>
-              </div>
+              <button className='primary-btn block mx-auto mt-[24px] md:mt-[36px]'>
+                Book a meeting
+              </button>
             </div>
           )}
         </div>
       </div>
-    </>
+    </section>
   );
 };
 

@@ -63,7 +63,7 @@ export const LongNavbar = () => {
               {link.menu ? <Image src={down} alt='Menu' /> : null}
             </Link>
           ))}
-          <button className='secondary-btn uppercase'>GET YOUR TICKETS</button>
+          <button className='primary-btn uppercase'>GET YOUR TICKETS</button>
         </nav>
       </motion.header>
     </div>

@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import Globe from '../../../../public/assets/icons/07.svg';
+import Link from 'next/link';
 
 export const Community = () => {
   return (
@@ -16,7 +17,9 @@ export const Community = () => {
             over the world come together to collaborate, learn, and share their knowledge. We are
             responsible for organizing an independent BSides-approved event for Dehradun.
           </p>
-          <button className='primary-btn block mt-[32px] mr-auto md:mt-[36px]'>About Us</button>
+          <Link href='/about-us' className='primary-btn mt-[32px] mr-auto md:mt-[36px]'>
+            About Us
+          </Link>
           <Image
             src={Globe}
             className='absolute top-[10%] right-0 max-h-full opacity-20 translate-x-[15%] md:top-0 md:translate-x-0 md:opacity-70 md:max-h-none'

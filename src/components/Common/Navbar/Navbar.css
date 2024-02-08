@@ -24,6 +24,7 @@
 }
 .navcon img {
   margin-left: 2px;
+  transition: 0.5s;
 }
 .navcon {
   display: flex;

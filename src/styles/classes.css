@@ -14,7 +14,7 @@
   .para-text {
     @apply text-[16px] leading-[137%] md:text-[24px] md:leading-[116%] text-[#ffffffb3];
   }
-
+  
   .primary-btn {
     background-blend-mode: color-dodge, lighten, color-dodge, lighten;
     background: linear-gradient(to right, rgba(97, 4, 215, 1), rgba(255, 0, 0, 1));

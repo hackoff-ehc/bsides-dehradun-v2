@@ -2,4 +2,5 @@
 
 :root{
     --poppins: 'Poppins', sans-serif;
+    --primary-gradient: linear-gradient(to right, rgba(97, 4, 215, 1), rgba(255, 0, 0, 1));
 }

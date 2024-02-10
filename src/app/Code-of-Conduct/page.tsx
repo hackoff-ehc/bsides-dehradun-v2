@@ -2,11 +2,11 @@ import { Navbar } from '@/components/Common';
 
 export default function Code() {
   return (
-    <main className='w-[80%] mt-48 ml-[10%]  flex-col font-poppins'>
-      <h1 className='font-bold w-fit text-5xl text-transparent bg-clip-text bg-gradient-to-r from-[#6104D7] to-[#FF0000] '>
+    <main className='w-[80%] mt-20 ml-[10%]  flex-col font-poppins'>
+      <h1 className=' font-poppins font-bold w-fit text-2xl md:text-5xl text-transparent bg-clip-text bg-gradient-to-r from-[#6104D7] to-[#FF0000] '>
         Code of Conduct
       </h1>
-      <p className='mt-10 text-white text-2xl'>
+      <p className='mt-5 md:mt-10 font-outfit text-white text-lg md:text-2xl'>
         <b>BSides Dehradun</b> is a security conference dedicated to fostering open communication,
         collaboration, and learning within the information security community. We are committed to
         creating a safe and inclusive environment for all participants, regardless of background,
@@ -15,8 +15,10 @@ export default function Code() {
       </p>
 
       {/* Values  */}
-      <h1 className='font-bold my-12 text-white text-5xl'>Values</h1>
-      <ul className='mt-10  text-white text-xl block list-disc marker:text-white'>
+      <h1 className='font-bold font-poppins my-6 md:my-12 text-white text-2xl md:text-5xl'>
+        Values
+      </h1>
+      <ul className='mt-5 md:mt-10 font-outfit  text-white text-sm md:text-xl block list-disc marker:text-white'>
         <li className='ml-[2%] list-item'>
           <p>
             <span className='uppercase font-semibold'>Openness and Transparency:</span> We encourage
@@ -64,11 +66,13 @@ export default function Code() {
       </ul>
 
       {/* Prohibited behaviour */}
-      <h1 className='font-bold my-12 text-white text-5xl'>Prohibited Behavior</h1>
-      <p className='mt-10 text-[#EB0133] font-bold text-2xl'>
+      <h1 className='font-bold my-6 md:my-12 font-poppins text-white text-2xl md:text-5xl'>
+        Prohibited Behavior
+      </h1>
+      <p className='mt-5 md:mt-10 font-outfit text-[#EB0133] font-bold text-lg md:text-2xl'>
         The following behavior is strictly prohibited at Bsides Dehradun:
       </p>
-      <ul className='mt-10  text-white text-xl block list-disc marker:text-white'>
+      <ul className='mt-5 md:mt-10 font-outfit text-white text-sm md:text-xl block list-disc marker:text-white'>
         <li className='ml-[2%] list-item'>
           <p>
             <span className='uppercase font-semibold'>violence or threats of violence:</span> We
@@ -160,8 +164,10 @@ export default function Code() {
       </ul>
 
       {/* Consequences of Violation */}
-      <h1 className='font-bold my-12 text-white text-5xl'>Consequences of Violation</h1>
-      <p className='mt-10 text-white text-2xl'>
+      <h1 className='font-bold my-6 md:my-12 font-poppins text-white text-2xl md:text-5xl'>
+        Consequences of Violation
+      </h1>
+      <p className='mt-5 md:mt-10 text-white font-outfit text-lg md:text-2xl'>
         Any participant who violates this Code of Conduct may be subject to
         <span className='text-[#EB0133] font-semibold'>&nbsp;disciplinary action</span>, up to and
         including expulsion from the conference without refund. In addition, the conference
@@ -169,8 +175,10 @@ export default function Code() {
       </p>
 
       {/* Reporting Violation */}
-      <h1 className='font-bold my-12 text-white text-5xl'>Reporting Violation</h1>
-      <p className='mt-10 text-white text-2xl'>
+      <h1 className='font-bold font-poppins my-6 md:my-12 text-white text-2xl md:text-5xl'>
+        Reporting Violation
+      </h1>
+      <p className='mt-5 md:mt-10 font-outfit text-white text-lg md:text-2xl'>
         If you experience or witness any behavior that violates this Code of Conduct, please report
         it to the conference organizers immediately.
         <span className='text-[#EB0133] font-semibold'>
@@ -178,8 +186,10 @@ export default function Code() {
           sending an email to [email protected]
         </span>
       </p>
-      <h1 className='font-bold my-12 text-white text-5xl'>Additional Notes</h1>
-      <ul className='mt-10  text-white text-xl block list-disc marker:text-white'>
+      <h1 className='font-bold font-poppins my-6 md:my-12 text-white text-2xl md:text-5xl'>
+        Additional Notes
+      </h1>
+      <ul className='mt-5 md:mt-10 font-outfit text-white text-sm md:text-xl block list-disc marker:text-white'>
         <li className='ml-[2%] list-item'>
           <p>
             This Code of Conduct is
@@ -211,8 +221,10 @@ export default function Code() {
           <br />
         </li>
       </ul>
-      <h1 className='font-bold my-12 text-white text-5xl'>Photography & Videography Guidelines</h1>
-      <p className='mt-10 text-white text-xl'>
+      <h1 className='font-bold font-poppins my-6 md:my-12 text-white text-2xl md:text-5xl'>
+        Photography & Videography Guidelines
+      </h1>
+      <p className='mt-5 md:mt-10 font-outfit text-white text-sm md:text-xl'>
         As Bsides Dehradun is a public event,{' '}
         <span className='text-[#EB0133] font-semibold'>
           &nbsp;no restrictions are placed on photography or videography.
@@ -225,30 +237,30 @@ export default function Code() {
         </span>
         .
       </p>
-      <p className='mt-10 text-white text-xl'>
-        Remember, this is a community event, and we encourage everyone to use{' '}
+      <p className='mt-5 md:mt-10 font-outfit text-white text-sm md:text-xl'>
+        Remember, this is a community event, and we encourage everyone to use
         <span className='text-[#EB0133] font-semibold'>&nbsp;common sense and good judgment</span>.
-        If someone doesn&apos;t want their picture taken,{' '}
+        If someone doesn&apos;t want their picture taken,
         <span className='text-[#EB0133] font-semibold'>&nbsp;please respect their wishes</span>.
       </p>
-      <p className='mt-10 text-white text-xl'>
-        As with most conferences, Bsides Dehradun reserves the right to{' '}
+      <p className='mt-5 md:mt-10 font-outfit text-white text-sm md:text-xl'>
+        As with most conferences, Bsides Dehradun reserves the right to
         <span className='text-[#EB0133] font-semibold'>
           &nbsp;use images and videos captured during the event in future marketing materials
         </span>
         . This includes photos with your likeness.
       </p>
-      <p className='mt-10 text-white text-xl uppercase'>
+      <p className='mt-5 md:mt-10 font-outfit text-white text-sm md:text-xl uppercase'>
         For attendees who prefer not to be photographed:
       </p>
 
-      <ul className='  text-white text-xl   list-disc marker:text-white'>
+      <ul className='  text-white text-sm md:text-xl   list-disc marker:text-white'>
         <li className=' ml-[2%] list-item'>
           <p>
-            Discreetly pick up a{' '}
+            Discreetly pick up a
             <span className='text-[#EB0133] font-semibold'>
               &nbsp;&quot;No photos, please&quot;
-            </span>{' '}
+            </span>
             sticker at the registration desk.
           </p>
           <br />
@@ -263,11 +275,11 @@ export default function Code() {
           <br />
         </li>
       </ul>
-      <p className='mt-10 text-white text-xl uppercase'>
+      <p className='mt-5 md:mt-10 font-outfit text-white text-sm md:text-xl uppercase'>
         Your comfort and privacy are our priority. By following these guidelines, we can ensure
         everyone has a safe and enjoyable experience at Bsides Dehradun.
       </p>
-      <p className='mt-10 mb-20 text-white font-bold text-xl uppercase'>
+      <p className='mt-5 md:mt-10 mb-20 text-white font-outfit font-bold text-sm md:text-xl uppercase'>
         We encourage all participants to help us create a safe and inclusive environment for
         everyone at Bsides Dehradun. Thank you for your cooperation.
       </p>

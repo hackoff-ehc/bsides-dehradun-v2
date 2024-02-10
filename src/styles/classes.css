@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 @layer components {
+  
   .h1-text {
     @apply text-[36px] sm:text-[48px] md:text-[clamp(56px,4.44vw,64px)];
   }
@@ -10,7 +11,7 @@
   .h2-text {
     @apply text-[24px] sm:text-[28px] md:text-[clamp(36px,3.33vw,48px)];
   }
-
+  
   .para-text {
     @apply text-[16px] leading-[137%] md:text-[24px] md:leading-[116%] text-[#ffffffb3];
   }
@@ -64,7 +65,10 @@
   .secondary-btn:hover::before {
     transform: rotate(240deg);
   }
-
+  .border-image-gradient {
+    border-image:  linear-gradient(to right, #6104D7, #FF0000) 0.1;
+    border-image-slice: 45%;
+  }
   .section-padding {
     @apply px-[24px] md:px-[clamp(48px,7.78vw,112px)] py-8 lg:py-[56px];
   }

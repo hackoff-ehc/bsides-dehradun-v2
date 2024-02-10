@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre&family=Fira+Code&family=Inclusive+Sans&family=Poppins&family=Roboto&family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
 :root{
     --poppins: 'Poppins', sans-serif;
+    --outfit: 'Outfit',sans-serif;
     --primary-gradient: linear-gradient(to right, rgba(97, 4, 215, 1), rgba(255, 0, 0, 1));
 }

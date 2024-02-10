@@ -10,15 +10,21 @@ const config: Config = {
     extend: {
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-        
-        
+        'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',  
+        'primary':'var(-primary-gradient)'
       },
       fontFamily:{
-        'poppins': "var(--poppins)"
+        'poppins': "var(--poppins)",
+        'outfit':"var(--outfit)"
       },
+      colors:{
+          'primary':'var(-primary-gradient)'
+      }
       
     },
+  },
+  variants: {
+    extend: {},
   },
   plugins: [],
 };

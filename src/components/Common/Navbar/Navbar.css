@@ -37,8 +37,7 @@
   padding: 15px;
   border-radius: 25px;
 }
-.bgCont {
-}
+
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
 }
@@ -80,6 +79,7 @@
 .burgerContainer > img {
   height: 2rem;
   width: 4rem;
+  /* background-color: var(--primary); */
 }
 .toggleBurger {
   height: 30px;

@@ -53,7 +53,7 @@ export const Navbar = () => {
 
   return (
     <>
-      <div className='burgerContainer absolute left-0 right-0 top-0 py-4 md:hidden'>
+      <div className='burgerContainer z-30 absolute left-0 right-0 top-0 py-4 md:hidden'>
         <Image src={Logo} alt='No Logo Found' />
         <button className='toggleBurger' onClick={toggleBurger}>
           <GiHamburgerMenu />
@@ -95,7 +95,7 @@ export const Navbar = () => {
 
       <div className='bgCont absolute left-0 right-0 top-[-14vh] hidden md:block'>
         <motion.header
-          className='flex justify-between items-center fixed bg-[#30303080] backdrop-blur-[15px] fill-[rgba(48,48,48,0.50)] rounded-xl w-5/6 mx-auto px-3 py-2 left-1/2 -translate-x-1/2 text-white font-bold top-[24px] z-50'
+          className='flex justify-between border-white border-2 items-center fixed bg-[#30303080] backdrop-blur-[15px] fill-[rgba(48,48,48,0.50)] rounded-xl w-[65%] mx-auto px-3 py-2 left-1/2 -translate-x-1/2 text-white font-bold top-[24px] z-50'
           initial={{ top: 24 }}
           animate={{ top: headerTop }}
         >

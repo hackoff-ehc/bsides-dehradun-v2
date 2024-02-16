@@ -35,7 +35,7 @@ export const Support = () => {
         {valuePoints.map(({ heading, content }) => (
           <div
             key={heading}
-            className='py-16 px-3 w-[95%] h-fit rounded-2xl md:h-[60vh] bg-[rgba(255,255,255,0.12)]  flex flex-col justify-between items-center '
+            className='py-16 px-3 w-[95%] h-fit rounded-2xl md:h-[60vh] lg:h-[100%] bg-[rgba(255,255,255,0.12)]  flex flex-col justify-between items-center '
           >
             <h1 className='font-bold flex flex-col justify-center items-center w-fit text-xl md:text-4xl text-transparent bg-clip-text  bg-gradient-to-r from-[#6104D7] to-[#FF0000] '>
               {heading}

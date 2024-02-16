@@ -26,7 +26,7 @@ export const History = () => {
         {valuePoints.map(({ heading, content }) => (
           <div
             key={heading}
-            className='py-10 w-[99%] md:w-[95%] h-fit md:h-[40vh] rounded-2xl  bg-[rgba(255,255,255,0.12)]  flex flex-col justify-between px-5 md:px-10 '
+            className='py-10 w-[99%] md:w-[95%] h-fit md:h-[40vh] lg:h-[100%] rounded-2xl  bg-[rgba(255,255,255,0.12)]  flex flex-col justify-between px-5 md:px-10 '
           >
             <h1 className='font-bold  flex flex-col justify-center items-center w-fit text-xl md:text-4xl text-transparent bg-clip-text  bg-gradient-to-r from-[#6104D7] to-[#FF0000] '>
               {heading}

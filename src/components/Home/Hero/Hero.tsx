@@ -75,7 +75,7 @@ export const Hero = () => {
         <div className='cyber'>
           <Marquee gradientWidth={10} speed={100}>
             <p>CYBER &nbsp;</p>
-            <p>SECURITY &nbsp; &nbsp;&nbsp;&nbsp;</p>
+            <p>SECURITY &nbsp; &nbsp;&nbsp;</p>
           </Marquee>
         </div>
 
@@ -88,7 +88,7 @@ export const Hero = () => {
         </div>
         <div className='conference cyber'>
           <Marquee gradientWidth={10} speed={100}>
-            <p>CONFERENCE</p>
+            <p>CONFERENCE&nbsp; &nbsp; &nbsp;</p>
           </Marquee>
         </div>
         <div className='cards'>

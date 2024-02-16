@@ -26,7 +26,7 @@ export function Value() {
         {valuePoints.map(({ heading, content }) => (
           <div
             key={heading}
-            className='font-outfit py-10 w-[95%] h-fit md:h-[60vh] rounded-2xl  bg-[rgba(255,255,255,0.12)]  flex flex-col justify-between items-center '
+            className='font-outfit py-10 w-[95%] h-fit md:h-[60vh] lg:h-[100%]  rounded-2xl  bg-[rgba(255,255,255,0.12)]  flex flex-col justify-between items-center '
           >
             <h1 className='font-bold flex flex-col justify-center items-center w-fit text-lg md:text-4xl text-transparent bg-clip-text  bg-gradient-to-r from-[#6104D7] to-[#FF0000] '>
               {heading}

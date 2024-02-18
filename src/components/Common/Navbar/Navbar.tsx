@@ -39,7 +39,8 @@ export const Navbar = () => {
         const currentScroll = window.scrollY;
         if (currentScroll > previousScroll) {
           if (currentScroll > window.innerHeight / 2) {
-            setHeaderTop(headerHeight * -1);
+            setHeaderTop(headerHeight * -2);
+            console.log(headerHeight);
           }
         } else {
           setHeaderTop(24);

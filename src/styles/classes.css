@@ -69,7 +69,12 @@
     border-image:  linear-gradient(to right, #6104D7, #FF0000) 0.1;
     border-image-slice: 45%;
   }
+
   .section-padding {
     @apply px-[24px] md:px-[clamp(48px,7.78vw,112px)] py-8 lg:py-[56px];
+  }
+
+  .section-width-constraint {
+    @apply max-w-[1440px] mx-auto;
   }
 }

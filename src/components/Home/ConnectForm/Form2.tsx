@@ -1,6 +1,5 @@
 'use client';
 import React, { useState, useEffect } from 'react';
-import MeetingImg from '@/assets/Meeting.png';
 import Link from 'next/link';
 import Image from 'next/image';
 import { IoIosInformationCircleOutline } from 'react-icons/io';
@@ -130,7 +129,7 @@ export const Connect = () => {
     }
   };
   return (
-    <section className='section-padding text-white'>
+    <section className='section-padding section-width-constraint text-white'>
       <h1 className='h1-text font-semibold mb-5 md:mb-10'>Let&apos;s connect</h1>
       <div className='grid grid-rows-2 md:grid-rows-1 md:grid-cols-2 gap-[40px] rounded-[10px] bg-[#5e5e5e24] fill-[#5e5e5e24] backdrop-blur-[2.5px] stroke-[1.5px] stroke-[#ffffff5c] p-4 md:p-[40px]'>
         <div className='formCon'>
@@ -242,7 +241,13 @@ export const Connect = () => {
               </form>
             ) : (
               <div className='text-center'>
-                <Image src={MeetingImg} alt='Loading img...' width={350} className='mx-auto' />
+                <Image
+                  src='/assets/images/schedule-meeting.svg'
+                  alt='Loading img...'
+                  width={350}
+                  height={315}
+                  className='mx-auto'
+                />
                 <h2 className='text-3xl font-semibold my-8'>Plan ahead</h2>
                 <p className='para-text'>
                   Click the button below to schedule a meeting with the BSides Dehradun team.

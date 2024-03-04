@@ -2,7 +2,7 @@ const featuresCards = ['Keynotes and talks', 'Panel discussions', 'CTF competiti
 
 export const Features = () => {
   return (
-    <section className='section-padding'>
+    <section className='section-padding section-width-constraint'>
       <h1 className='text-white h1-text font-semibold mb-4 sm:mb-4 md:mb-[36px]'>
         BSides confrences feature
       </h1>

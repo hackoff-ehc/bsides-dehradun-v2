@@ -33,7 +33,7 @@ const interestCards = [
   {
     title: 'Get your Tickets',
     description:
-      'Tickets for BSides Dehradun 0x01 will go on sale in early January 2024. We encourage you to purchase your tickets early, as they are expected to sell out quickly.',
+      'Tickets for BSides Dehradun 0x01 will go on sale in mid March 2024. We encourage you to purchase your tickets early, as they are expected to sell out quickly.',
     iconSrc: '/assets/icons/ticket.svg',
     href: '#',
   },
@@ -48,7 +48,7 @@ const interestCards = [
 
 export const Interests = () => {
   return (
-    <section className='px-3 md:px-[clamp(48px,7.78vw,112px)] py-4 md:py-8 lg:py-12'>
+    <section className='section-width-constraint px-3 md:px-[clamp(48px,7.78vw,112px)] py-4 md:py-8 lg:py-12'>
       <h1 className='text-white h1-text font-semibold mb-4 sm:mb-8 md:mb-[clamp(64px,5.56vw,80px)]'>
         Show your interest
       </h1>

@@ -38,7 +38,7 @@ export const History = () => {
             key={heading}
             className='py-[24px] px-[20px] md:px-[36px] md:py-[28px] rounded-2xl bg-[#ffffff12] backdrop-blur-[2px] flex flex-col justify-between gap-3 md:gap-6'
           >
-            <h1 className='font-bold flex flex-col justify-center items-center w-fit text-xl md:text-4xl text-transparent bg-clip-text  bg-gradient-to-r from-[#6104D7] to-[#FF0000]'>
+            <h1 className='font-bold flex flex-col justify-center items-center w-fit text-[28px] lg:text-[30px] xl:text-[34px] text-transparent bg-clip-text  bg-gradient-to-r from-[#6104D7] to-[#FF0000]'>
               {heading}
             </h1>
             <div className='bg-[#ffffff30] h-[2px]' />

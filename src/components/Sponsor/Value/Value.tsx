@@ -28,7 +28,7 @@ export function Value() {
             key={heading}
             className='font-outfit rounded-2xl  bg-[rgba(255,255,255,0.12)] flex flex-col justify-between items-center py-[24px] px-[14px] md:px-[48px]'
           >
-            <h1 className='text-center text-lg md:text-4xl text-transparent bg-clip-text bg-gradient-to-r from-[#6104D7] to-[#FF0000]'>
+            <h1 className='text-center text-[28px] lg:text-[30px] xl:text-[34px] text-transparent bg-clip-text bg-gradient-to-r from-[#6104D7] to-[#FF0000]'>
               {heading}
             </h1>
             <div className='bg-[#ffffff30] w-2/3 h-[2px] my-3 md:my-6' />

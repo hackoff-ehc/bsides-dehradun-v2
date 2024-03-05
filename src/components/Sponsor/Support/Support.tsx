@@ -31,13 +31,13 @@ export const Support = () => {
         We understand that sponsors seek a return on their investment. Here are compelling reasons
         to support BSides Dehradun:
       </p>
-      <div className='font-outfit flex flex-col lg:grid lg:grid-rows-[repeat(2,minmax(0,clamp(340px,calc(600px-15vw),460px)))] lg:grid-cols-2 mt-7 md:mt-10 gap-5 lg:gap-[10%]'>
+      <div className='font-outfit flex flex-col lg:grid lg:grid-rows-[repeat(2,minmax(0,clamp(360px,calc(600px-15vw),460px)))] lg:grid-cols-2 mt-7 md:mt-10 gap-5 lg:gap-[10%]'>
         {valuePoints.map(({ heading, content }) => (
           <div
             key={heading}
             className='py-[24px] px-[14px] md:px-[48px] rounded-2xl bg-[rgba(255,255,255,0.12)] flex flex-col items-center lg:h-full'
           >
-            <h1 className='text-center text-xl md:text-4xl text-transparent bg-clip-text bg-gradient-to-r from-[#6104D7] to-[#FF0000] '>
+            <h1 className='text-[28px] lg:text-[30px] xl:text-[34px] text-center text-transparent bg-clip-text bg-gradient-to-r from-[#6104D7] to-[#FF0000] '>
               {heading}
             </h1>
             <div className='bg-[#ffffff30] w-2/3 h-[2px] my-3 md:my-6' />

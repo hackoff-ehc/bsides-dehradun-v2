@@ -130,7 +130,7 @@ const Form = () => {
   };
 
   return (
-    <section className='px-3 md:px-[clamp(48px,7.78vw,112px)] py-4 md:py-8 lg:py-12 relative'>
+    <section className='px-3 md:px-[clamp(48px,7.78vw,112px)] py-4 md:mt-[-10vh] lg:py-12 relative'>
       <iframe
         src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16838.740662631302!2d78.02409859358902!3d30.32138836830718!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390929c356c888af%3A0x4c3562c032518799!2sDehradun%2C%20Uttarakhand!5e0!3m2!1sen!2sin!4v1703190907554!5m2!1sen!2sin'
         className='w-full absolute z-[-1] mt-[23%] left-0 right-0'

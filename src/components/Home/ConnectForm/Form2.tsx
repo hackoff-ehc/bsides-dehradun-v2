@@ -130,7 +130,7 @@ export const Connect = () => {
     }
   };
   return (
-    <section className='section-padding text-white'>
+    <section className='section-padding md:mt-[-20vh] text-white'>
       <h1 className='h1-text font-semibold mb-5 md:mb-10'>Let&apos;s connect</h1>
       <div className='grid grid-rows-2 md:grid-rows-1 md:grid-cols-2 gap-[40px] rounded-[10px] bg-[#5e5e5e24] fill-[#5e5e5e24] backdrop-blur-[2.5px] stroke-[1.5px] stroke-[#ffffff5c] p-4 md:p-[40px]'>
         <div className='formCon'>

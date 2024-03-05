@@ -40,7 +40,6 @@ export const Navbar = () => {
         if (currentScroll > previousScroll) {
           if (currentScroll > window.innerHeight / 2) {
             setHeaderTop(headerHeight * -2);
-            console.log(headerHeight);
           }
         } else {
           setHeaderTop(24);
@@ -98,26 +97,28 @@ export const Navbar = () => {
 
       <div className='bgCont absolute left-0 right-0 top-[-14vh] hidden md:block'>
         <motion.header
-          className='flex justify-between border-white border-[1px] items-center fixed bg-[#30303080] backdrop-blur-[15px] fill-[rgba(48,48,48,0.50)] rounded-xl w-[65%] mx-auto px-3 py-2 left-1/2 -translate-x-1/2 text-white font-bold top-[24px] z-50'
+          className='flex justify-between border-white border-[1px] items-center fixed bg-[#30303080] backdrop-blur-[15px] fill-[rgba(48,48,48,0.50)] rounded-xl w-[65%] mx-auto px-3 py-2 left-1/2 -translate-x-1/2 text-white font-bold top-[24px] z-50 section-width-constraint'
           initial={{ top: 24 }}
           animate={{ top: headerTop }}
         >
           <Link href='/'>
             <Image src={Logo} alt='BSides Dehradun' />
           </Link>
-          <nav className='flex gap-[clamp(16px,1.944vw,32px)] items-center'>
+          <nav className='flex gap-[clamp(16px,1vw,32px)] items-center'>
             {navLinks.map((link) => (
               <Link
                 href={link.href ? '/coming-soon' : '#'}
                 key={link.title}
-                className='gap-[6px] flex items-center'
+                className='gap-[4px] text-[14px] flex items-center'
               >
                 <span className='uppercase'>{link.title}</span>{' '}
                 {link.menu ? <Image src={down} alt='Menu' /> : null}
               </Link>
             ))}
           </nav>
-          <button className='primary-btn uppercase'>GET YOUR TICKETS</button>
+          <button className='primary-btn lg:py-[20px] lg:px-[24px] uppercase'>
+            GET YOUR TICKETS
+          </button>
         </motion.header>
       </div>
     </>

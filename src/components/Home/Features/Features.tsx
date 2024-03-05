@@ -18,8 +18,10 @@ export const Features = () => {
     pagination:false,
   };
   return (
+
     <section className='section-padding'>
       <h1 className='text-white h1-text font-semibold mb-4 sm:mb-4 md:mb-[0px]'>
+
         BSides confrences feature
       </h1>
       <div className='flex flex-col gap-9 md:gap-[104px] md:flex-row md:justify-between md:pr-24'>

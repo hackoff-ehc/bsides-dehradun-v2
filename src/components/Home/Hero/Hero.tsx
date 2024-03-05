@@ -41,7 +41,7 @@ export const Hero = () => {
   const fl = React.useRef(null);
   React.useEffect(() => {
     const typed = new Typed(fl.current, {
-      strings: ['17TH FEB'],
+      strings: ['08 JUNE'],
       typeSpeed: 100,
       showCursor: false,
       startDelay: 2000,
@@ -73,13 +73,13 @@ export const Hero = () => {
       <div className='heroContainer'>
         {/* <div className='fakeContainer'></div> */}
         <div className='cyber'>
-          <Marquee gradientWidth={10} speed={100}>
+          <Marquee gradientWidth={10} speed={75}>
             <p>CYBER &nbsp;</p>
             <p>SECURITY &nbsp; &nbsp;&nbsp;</p>
           </Marquee>
         </div>
 
-        <div className='section-padding mainText'>
+        <div className='section-padding section-width-constraint mainText'>
           <span ref={el} />
           <div className='subText'>
             <span className='date' ref={fl}></span>
@@ -87,7 +87,7 @@ export const Hero = () => {
           </div>
         </div>
         <div className='conference cyber'>
-          <Marquee gradientWidth={10} speed={100}>
+          <Marquee gradientWidth={10} speed={75}>
             <p>CONFERENCE&nbsp; &nbsp; &nbsp;</p>
           </Marquee>
         </div>

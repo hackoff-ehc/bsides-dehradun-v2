@@ -7,7 +7,7 @@ const valuePoints = [
   {
     heading: 'Networking Opportunities',
     content:
-      'BSides Dehradun brings together engaged participants eager to absorb information. As a sponsor, you&apos;ll have direct access to industry leaders, voices, and potential collaborators.',
+      "BSides Dehradun brings together engaged participants eager to absorb information. As a sponsor, you'll have direct access to industry leaders, voices, and potential collaborators.",
   },
   {
     heading: 'Recruit Top Talent',
@@ -23,27 +23,25 @@ const valuePoints = [
 
 export const Support = () => {
   return (
-    <section className='mb-36 ml-[9%] w-[80%]'>
-      <h1 className='font-bold w-fit text-xl font-poppins md:text-4xl text-white'>
+    <section className='section-padding section-width-constraint'>
+      <h1 className='font-bold w-fit text-xl font-poppins md:text-4xl text-white mb-3 md:mb-4'>
         Reasons to Show Your Support
       </h1>
-      <p className='font-medium font-outfit text-sm md:text-xl mt-5'>
+      <p className='para-text font-outfit'>
         We understand that sponsors seek a return on their investment. Here are compelling reasons
         to support BSides Dehradun:
       </p>
-      <div className='grid font-outfit grid-cols-1 md:grid-cols-2 mt-10 gap-5 md:gap-[10%]'>
+      <div className='font-outfit flex flex-col lg:grid lg:grid-rows-[repeat(2,minmax(0,clamp(365px,calc(630px-16vw),480px)))] lg:grid-cols-2 mt-7 md:mt-10 gap-5 lg:gap-[4%]'>
         {valuePoints.map(({ heading, content }) => (
           <div
             key={heading}
-            className='py-16 px-3 w-[95%] h-fit rounded-2xl md:h-[60vh] lg:h-[100%] bg-[rgba(255,255,255,0.12)]  flex flex-col justify-between items-center '
+            className='py-[24px] px-[14px] md:px-[48px] rounded-2xl bg-[rgba(255,255,255,0.12)] flex flex-col items-center lg:h-full'
           >
-            <h1 className='font-bold flex flex-col justify-center items-center w-fit text-xl md:text-4xl text-transparent bg-clip-text  bg-gradient-to-r from-[#6104D7] to-[#FF0000] '>
+            <h1 className='text-[28px] lg:text-[30px] xl:text-[34px] text-center text-transparent bg-clip-text bg-gradient-to-r from-[#6104D7] to-[#FF0000] '>
               {heading}
-              <br />
-              <hr className='w-[95%] mt-5 h-[1px] text-[rgba(0,0,0,0.1)]' />
             </h1>
-
-            <p className='font-medium text-sm md:text-2xl  mt-5 w-[90%]'>{content}</p>
+            <div className='bg-[#ffffff30] w-2/3 h-[2px] my-3 md:my-6' />
+            <p className='para-text text-[#FAF9F6] text-center flex-grow'>{content}</p>
           </div>
         ))}
       </div>

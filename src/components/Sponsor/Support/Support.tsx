@@ -31,7 +31,7 @@ export const Support = () => {
         We understand that sponsors seek a return on their investment. Here are compelling reasons
         to support BSides Dehradun:
       </p>
-      <div className='font-outfit flex flex-col lg:grid lg:grid-rows-[repeat(2,minmax(0,clamp(360px,calc(600px-15vw),460px)))] lg:grid-cols-2 mt-7 md:mt-10 gap-5 lg:gap-[10%]'>
+      <div className='font-outfit flex flex-col lg:grid lg:grid-rows-[repeat(2,minmax(0,clamp(365px,calc(630px-16vw),480px)))] lg:grid-cols-2 mt-7 md:mt-10 gap-5 lg:gap-[4%]'>
         {valuePoints.map(({ heading, content }) => (
           <div
             key={heading}

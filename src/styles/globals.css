@@ -33,3 +33,6 @@ body {
   color: #fff;
   @apply pt-[80px] md:pt-[112px];
 }
+a>span>span{
+  display: flex;
+}

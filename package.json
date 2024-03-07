@@ -10,6 +10,8 @@
     "gambare": "git pull origin dev && eslint \"src/**/*.{js,jsx,ts,tsx,json}\" && prettier --write \"src/**/*.{js,jsx,ts,tsx,json}\" --config ./.prettierrc && next build && git add . && git commit -m"
   },
   "dependencies": {
+    "@headlessui/react": "^1.7.18",
+    "@nextui-org/react": "^2.2.10",
     "@react-google-maps/api": "^2.19.2",
     "@splidejs/react-splide": "^0.7.12",
     "framer-motion": "^10.16.16",

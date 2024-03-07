@@ -2,23 +2,53 @@
 import Logo from '@/assets/navLogo.png';
 import BurgerIC from '@/assets/menu_open.svg';
 import './Navbar.css';
+import { Dropdown, DropdownMenu, DropdownTrigger, DropdownItem, Button } from '@nextui-org/react';
 import { useState, useEffect, useRef } from 'react';
 import down from '@/assets/down.svg';
+import right from '@/assets/right.svg';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import Link from 'next/link';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
+import { Menu } from '@headlessui/react';
 
 const navLinks = [
-  { title: 'overview', menu: [], href: '/coming-soon' },
-  { title: 'schedule', menu: [], href: '/coming-soon' },
-  { title: 'conference', menu: [], href: '/coming-soon' },
+  {
+    title: 'overview',
+    menu: [
+      { title: 'About Bsides Dehradun', href: '/about-us' },
+      { title: 'Code of Conduct', href: '/code-of-conduct' },
+      { title: 'Venue', href: '/coming-soon' },
+      { title: 'Visit Doon', href: '/coming-soon' },
+      { title: 'FAQ', href: '/coming-soon' },
+    ],
+    href: '/coming-soon',
+  },
+  {
+    title: 'schedule',
+    menu: [
+      { title: 'Conference', href: '/coming-soon' },
+      { title: 'Trainings', href: '/coming-soon' },
+      { title: 'Exhibition', href: '/coming-soon' },
+    ],
+    href: '/coming-soon',
+  },
+  {
+    title: 'conference',
+    menu: [
+      { title: 'Call for Sponsors', href: '/coming-soon' },
+      { title: 'Speakers', href: '/coming-soon' },
+      { title: 'Community Partners', href: '/coming-soon' },
+    ],
+    href: '/coming-soon',
+  },
   { title: 'sponsor us', menu: null, href: '/coming-soon' },
   { title: 'contact us', menu: null, href: '/coming-soon' },
 ];
 
 export const Navbar = () => {
   const [headerTop, setHeaderTop] = useState<number>(24);
+
   const headerRef = useRef<null | HTMLHeadElement>(null);
   const [burger, setBurger] = useState<boolean>(false);
 
@@ -68,7 +98,23 @@ export const Navbar = () => {
             </button>
           </div>
           <div className='burContent'>
-            <Link href='/coming-soon'>
+            {navLinks.map((link) => {
+              var menu = link.menu;
+              return menu ? (
+                <div key={link.title}>
+                  <button className='navburcon'>{link.title}</button>
+                  <div className='hiddencon'></div>
+                  {/* {menu.map((m)=>(
+                
+              ))} */}
+                </div>
+              ) : (
+                <Link className='navburcon' href={link.href}>
+                  {link.title}
+                </Link>
+              );
+            })}
+            {/* <Link href='/coming-soon'>
               <div className='navburcon'>
                 OVERVIEW <Image src={down} alt='None' />{' '}
               </div>
@@ -89,7 +135,7 @@ export const Navbar = () => {
             </Link>
             <Link href='/coming-soon'>
               <div className='navburcon'>CONTACT US </div>
-            </Link>
+            </Link> */}
           </div>
           <button className='tickets'> Get Your Tickets </button>
         </div>
@@ -104,19 +150,44 @@ export const Navbar = () => {
           <Link href='/'>
             <Image src={Logo} alt='BSides Dehradun' />
           </Link>
-          <nav className='flex gap-[clamp(16px,1vw,32px)] items-center'>
-            {navLinks.map((link) => (
-              <Link
-                href={link.href ? '/coming-soon' : '#'}
-                key={link.title}
-                className='gap-[4px] text-[14px] flex items-center'
-              >
-                <span className='uppercase'>{link.title}</span>{' '}
-                {link.menu ? <Image src={down} alt='Menu' /> : null}
-              </Link>
-            ))}
+          <nav className='flex gap-[clamp(16px,1vw,32px)] items-center capitalize'>
+            {navLinks.map((link) => {
+              var menu = link.menu;
+
+              return link.menu ? (
+                <Dropdown>
+                  <DropdownTrigger>
+                    <Button variant='bordered' className='flex ml-1 capitalize'>
+                      {link.title}
+                      <Image src={down} alt='None' />
+                    </Button>
+                  </DropdownTrigger>
+                  <DropdownMenu
+                    aria-label='Link Actions'
+                    className='bg-custom-bg rounded-md mt-1 p-2 flex  justify-center items-center w-[20vw] text-black font-poppins font-medium capitalize'
+                    items={link.menu}
+                  >
+                    {(item) => (
+                      <DropdownItem
+                        key={item.title}
+                        href={item.href}
+                        className='p-1 w-[98%] mt-1 flex  justify-start rounded-md bg-navlink items-start text-white '
+                      >
+                        <span>
+                          {item.title} <Image src={right} alt='None' />
+                        </span>
+                      </DropdownItem>
+                    )}
+                  </DropdownMenu>
+                </Dropdown>
+              ) : (
+                <Link href={link.href} key={link.title}>
+                  {link.title}
+                </Link>
+              );
+            })}
           </nav>
-          <button className='primary-btn lg:py-[20px] lg:px-[24px] uppercase'>
+          <button className='primary-btn lg:py-[16px] lg:px-[10px] uppercase'>
             GET YOUR TICKETS
           </button>
         </motion.header>

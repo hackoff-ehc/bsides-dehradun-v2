@@ -18,7 +18,9 @@ const config: Config = {
         'outfit':"var(--outfit)"
       },
       colors:{
-          'primary':'var(-primary-gradient)'
+          'primary':'var(-primary-gradient)',
+          'custom-bg': 'rgba(255, 255, 255, 0.24)',
+          'navlink':'rgba(12, 9, 9, 0.7)'
       }
       
     },

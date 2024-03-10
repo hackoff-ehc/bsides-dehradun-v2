@@ -4,7 +4,7 @@ export function Hero() {
       <h1 className='font-bold w-fit font-poppins text-2xl md:text-5xl text-transparent bg-clip-text bg-gradient-to-r from-[#6104D7] to-[#FF0000] mb-3 md:mb-6'>
         Call for Sponsorship BSides Dehradun 2024
       </h1>
-      <p className='font-semibold font-outfit text-[14px] sm:text-[20px] md:text-[24px] lg:text-[32px] mb-3 md:mb-4'>
+      <p className='font-semibold font-outfit text-[17px] sm:text-[20px] md:text-[24px] lg:text-[32px] mb-3 md:mb-4'>
         Unlock Opportunities: Be a Part of the Inaugural BSides Dehradun!
       </p>
       <p className='para-text font-outfit'>

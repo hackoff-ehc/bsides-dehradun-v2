@@ -1,5 +1,3 @@
-
-
 'use client';
 import Logo from '@/assets/navLogo.png';
 import BurgerIC from '@/assets/menu_open.svg';

@@ -13,7 +13,7 @@
   }
   
   .para-text {
-    @apply text-[16px] leading-[137%] md:text-[24px] md:leading-[116%] text-[#ffffffb3];
+    @apply text-[16px] leading-[137%] md:text-[clamp(20px,1.75vw,24px)] md:leading-[116%] text-[#ffffffb3];
   }
   
   .primary-btn {

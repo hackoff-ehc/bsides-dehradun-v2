@@ -21,7 +21,9 @@
     "react-fast-marquee": "^1.6.2",
     "react-icons": "^4.12.0",
     "react-onsenui": "^1.13.3",
+    "react-slick": "^0.30.2",
     "scroll-carousel": "^1.2.7",
+    "slick-carousel": "^1.8.1",
     "typed.js": "^2.1.0",
     "use-places-autocomplete": "^4.0.1"
   },
@@ -29,6 +31,7 @@
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "@types/react-slick": "^0.23.13",
     "autoprefixer": "^10.0.1",
     "eslint": "^8",
     "eslint-config-next": "14.0.3",

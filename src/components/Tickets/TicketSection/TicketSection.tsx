@@ -1,28 +1,7 @@
-import React from 'react';
-import { Ticket } from '../Ticket';
+'use client';
 
-const cardsContent = [
-  // {
-  //   title: 'Professional Pass ',
-  //   price: "3999",
-  // },
-  {
-    title: '2 days Training Pass ',
-    price: '29999',
-  },
-  // {
-  //   title: 'Student Pass',
-  //   price: "1999",
-  // },
-  // {
-  //   title: 'Individual Pass',
-  //   price: "2999",
-  // },
-  // {
-  //   title: 'After Party Pass',
-  //   price: "1999",
-  // },
-];
+import React from 'react';
+import { TicketsCarousel } from '../TicketsCarousel';
 
 const missions = [
   {
@@ -135,11 +114,7 @@ export const TicketSection = () => {
       </div>
       <div>
         <h2 className='h2-text md:h1-text font-semibold section-padding'>Passes</h2>
-        <div className='flex gap-3'>
-          {cardsContent.map((item, index) => (
-            <Ticket key={index} price={item.price} tag={item.title} />
-          ))}
-        </div>
+        <TicketsCarousel />
       </div>
       <div className='section-padding'>
         <h2 className='h2-text font-bold '>Terms & Conditions</h2>

@@ -22,7 +22,7 @@ export function Value() {
         allow sponsors to engage directly with participants, fostering meaningful connections and
         friendships. Here&apos;s why being a sponsor matters:
       </p>
-      <div className='grid grid-cols-1 md:grid-cols-2 mt-7 md:mt-10 gap-[10%]'>
+      <div className='flex flex-col gap-5 md:grid md:grid-cols-2 mt-7 md:mt-10 md:gap-[10%]'>
         {valuePoints.map(({ heading, content }) => (
           <div
             key={heading}

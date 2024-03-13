@@ -31,29 +31,48 @@ export const Footer = () => {
           </Link>
           <div className='flex gap-3 mt-4 justify-between'>
             <div className='border-2 border-white rounded-full p-2 transition-colors hover:bg-[rgba(236,0,51,0.30)] hover:border-[rgba(236,0,51,0.30)]'>
-              <Link className='text-2xl cur cursor-pointer rounded-full ' href='/coming-soon'>
+              <a
+                className='text-2xl cur cursor-pointer rounded-full'
+                target='_blank'
+                href='https://www.instagram.com/bsides.dehradun'
+              >
                 <IoLogoInstagram />
-              </Link>
+              </a>
             </div>
             <div className='border-2 border-white rounded-full p-2 transition-colors hover:bg-[rgba(236,0,51,0.30)] hover:border-[rgba(236,0,51,0.30)]'>
-              <Link className='text-2xl cur cursor-pointer rounded-full ' href='/coming-soon'>
+              <a
+                className='text-2xl cur cursor-pointer rounded-full'
+                href='https://www.facebook.com/share/VmAAwzAzsXN7CzRY/?mibextid=qi2Omg'
+              >
                 <FaFacebook />
-              </Link>
+              </a>
             </div>
             <div className='border-2 border-white rounded-full p-2 transition-colors hover:bg-[rgba(236,0,51,0.30)] hover:border-[rgba(236,0,51,0.30)]'>
-              <Link className='text-2xl cur cursor-pointer rounded-full ' href='/coming-soon'>
+              <a
+                className='text-2xl cur cursor-pointer rounded-full'
+                target='_blank'
+                href='https://www.youtube.com/@BSidesDehradun'
+              >
                 <FaYoutube />
-              </Link>
+              </a>
             </div>
             <div className='border-2 border-white rounded-full p-2 transition-colors hover:bg-[rgba(236,0,51,0.30)] hover:border-[rgba(236,0,51,0.30)]'>
-              <Link className='text-2xl cur cursor-pointer rounded-full ' href='/coming-soon'>
+              <a
+                className='text-2xl cur cursor-pointer rounded-full'
+                target='_blank'
+                href='https://twitter.com/BSides_Dehradun'
+              >
                 <BsTwitterX />
-              </Link>
+              </a>
             </div>
             <div className='border-2 border-white rounded-full p-2 transition-colors hover:bg-[rgba(236,0,51,0.30)] hover:border-[rgba(236,0,51,0.30)]'>
-              <Link className='text-2xl cur cursor-pointer rounded-full ' href='/coming-soon'>
+              <a
+                className='text-2xl cur cursor-pointer rounded-full'
+                target='_blank'
+                href='https://www.linkedin.com/company/bsides-dehradun/'
+              >
                 <FaLinkedin />
-              </Link>
+              </a>
             </div>
           </div>
         </div>

@@ -4,7 +4,6 @@ import BurgerIC from '@/assets/menu_open.svg';
 import './Navbar.css';
 import { Dropdown, DropdownMenu, DropdownTrigger, DropdownItem, Button } from '@nextui-org/react';
 import { useState, useEffect, useRef } from 'react';
-import down from '@/assets/down.svg';
 import right from '@/assets/right.svg';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import Link from 'next/link';
@@ -86,13 +85,23 @@ export const Navbar = () => {
   return (
     <>
       <div className='burgerContainer z-30 absolute left-0 right-0 top-0 py-4 md:hidden'>
-        <Image src={Logo} alt='No Logo Found' />
+        <Image
+          src='/assets/icons/bsides-dehradun.svg'
+          alt='BSides Dehradun Logo'
+          width={64}
+          height={32}
+        />
         <button className='toggleBurger' onClick={toggleBurger}>
           <GiHamburgerMenu />
         </button>
         <div className='burgerPage' style={{ left: left }}>
           <div className='burtoggle'>
-            <Image src={Logo} className='burLogo' alt='No Logo' />
+            <Image
+              src='/assets/icons/bsides-dehradun.svg'
+              alt='BSides Dehradun Logo'
+              width={64}
+              height={32}
+            />
             <button onClick={toggleBurger}>
               <Image src={BurgerIC} className='closeIcon' alt='No Image Fo8nd' />
             </button>
@@ -113,14 +122,19 @@ export const Navbar = () => {
           animate={{ top: headerTop }}
         >
           <Link href='/'>
-            <Image src={Logo} alt='BSides Dehradun' />
+            <Image
+              src='/assets/icons/bsides-dehradun.svg'
+              alt='BSides Dehradun Logo'
+              width={110}
+              height={48}
+            />
           </Link>
           <nav className='flex gap-[clamp(16px,1vw,32px)] items-center capitalize'>
             {navLinks.map((link) => (
               <NavElement key={link.title} link={link} />
             ))}
           </nav>
-          <button className='primary-btn lg:py-[16px] lg:px-[10px] uppercase'>
+          <button className='primary-btn lg:py-[16px] lg:px-[12px] uppercase'>
             GET YOUR TICKETS
           </button>
         </motion.header>
@@ -206,23 +220,25 @@ const NavElement = ({ link }: { link: any }) => {
   return link.menu ? (
     <Dropdown
       onOpenChange={() => {
-        setColor('red');
+        setColor('#e87371');
         setAngle('-180deg');
-        setColor('rgb(185,28,28)');
       }}
       onClose={() => {
-        setColor('white');
+        setColor('#fff');
         setAngle('0deg');
-        setColor('white');
       }}
     >
       <DropdownTrigger>
-        <Button variant='bordered' style={{ color: `${color}` }} className='flex ml-1 capitalize'>
+        <Button
+          variant='bordered'
+          style={{ color: `${color}` }}
+          className='flex gap-1 capitalize text-[14px]'
+        >
           {link.title}
           <svg
             width='14'
             stroke={color}
-            style={{ transform: `rotate(${angle})`, transition: '0.5s' }}
+            style={{ transform: `rotate(${angle})`, transition: '0.5s', scale: 0.8 }}
             height='14'
             viewBox='0 0 14 14'
             xmlns='http://www.w3.org/2000/svg'
@@ -260,7 +276,7 @@ const NavElement = ({ link }: { link: any }) => {
             <DropdownItem
               key={item.title}
               href={item.href}
-              className='p-1 w-[98%] mt-1 flex  justify-start rounded-md bg-navlink items-start text-white '
+              className='p-1 w-[98%] mt-1 flex  justify-start rounded-md bg-navlink items-start text-white text-[14px]'
             >
               <span className='flex justify-between w-[17vw]'>
                 {item.title} <Image src={right} alt='None' />
@@ -271,7 +287,7 @@ const NavElement = ({ link }: { link: any }) => {
       </DropdownMenu>
     </Dropdown>
   ) : (
-    <Link href={link.href} key={link.title}>
+    <Link href={link.href} key={link.title} className='text-[14px]'>
       {link.title}
     </Link>
   );

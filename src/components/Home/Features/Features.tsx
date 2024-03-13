@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 
 import resolveConfig from 'tailwindcss/resolveConfig';
 import tailwindConfig from '../../../../tailwind.config';
+import Link from 'next/link';
 
 const fullConfig = resolveConfig(tailwindConfig);
 
@@ -79,9 +80,12 @@ export const Features = () => {
             The conference will be held one-days and will feature a variety of talks, workshops, and
             panels on a wide range of security topics.
           </p>
-          <button className='primary-btn py-6 text-[20px] text-center font-bold w-3/4 box-border hidden md:block'>
+          <Link
+            href='/tickets'
+            className='primary-btn py-6 text-[20px] text-center font-bold w-3/4 box-border hidden md:block'
+          >
             GET YOUR TICKETS
-          </button>
+          </Link>
         </div>
         <div className='hidden md:flex flex-col grow items-center relative overflow-hidden w-[unset] mx-auto'>
           {featuresCards.map((title, index) => {

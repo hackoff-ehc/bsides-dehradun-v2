@@ -24,7 +24,7 @@ const valuePoints = [
 export const History = () => {
   return (
     <section className='section-padding section-width-constraint'>
-      <h1 className='font-bold ml-[4%] font-poppins md:ml-0 w-fit text-xl md:text-4xl text-white mb-3 md:mb-4'>
+      <h1 className='font-bold font-poppins w-fit text-xl md:text-4xl text-white mb-3 md:mb-4'>
         Be Part of History
       </h1>
       <p className='para-text font-outfit'>

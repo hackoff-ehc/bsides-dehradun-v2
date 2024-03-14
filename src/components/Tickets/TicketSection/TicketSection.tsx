@@ -30,7 +30,7 @@ const missions = [
   },
   {
     title: 'Refund Policy',
-    description: [' No refunds will be provided after purchasing any pass.      '],
+    description: [' No refunds will be provided after purchasing any pass.'],
   },
   {
     title: 'Code of Conduct',

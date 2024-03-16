@@ -108,7 +108,7 @@ export const Connect = () => {
     } else {
       // API submitting
       const formData = new FormData(event.target);
-      formData.append('access_key', 'ef61b607-b249-4909-9cb6-5a8a4c83bc2c');
+      formData.append('access_key', '0c28699f-89cf-44c5-ac01-4b0f889fdb6c');
 
       const object = Object.fromEntries(formData);
       const json = JSON.stringify(object);

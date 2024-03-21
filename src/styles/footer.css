@@ -1,23 +1,17 @@
-.footer-bg-text-container {
-  pointer-events: none;
-  position: absolute;
-  left: 0;
-  right: 0;
-  z-index: -1;
-}
-
-.footer-bg-text-container p {
-  color: white;
-  font-size: 30vmin;
-  font-weight: 600;
+.footer-bg-text {
+  --shadow-color: #ffffff26;
   text-shadow:
-    1px 1px #ffffff26,
-    -1px -1px #ffffff26;
+    1px 1px var(--shadow-color),
+    -1px -1px var(--shadow-color);
+
+    @media screen and (max-width: 560px) {
+      --shadow-color: #ffffff45;
+    }
 }
 
 @supports (-webkit-text-stroke: 1px #ffffff26) {
-  .footer-bg-text-container p {
-    -webkit-text-stroke: 0.1vw #ffffff26;
+  .footer-bg-text {
+    -webkit-text-stroke: 0.1vw var(--shadow-color);
     color: transparent;
     text-shadow: none;
   }

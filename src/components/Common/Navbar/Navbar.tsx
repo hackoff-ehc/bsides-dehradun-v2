@@ -42,7 +42,7 @@ const navLinks = [
     href: '/coming-soon',
   },
   { title: 'sponsor us', menu: null, href: '/sponsor-us' },
-  { title: 'contact us', menu: null, href: '/coming-soon' },
+  { title: 'contact us', menu: null, href: '#footer' },
 ];
 
 export const Navbar = () => {

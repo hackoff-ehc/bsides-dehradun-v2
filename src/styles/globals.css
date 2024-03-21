@@ -31,8 +31,9 @@ body {
   background-image: url('../assets/mainBG.svg');
   background-color: black;
   color: #fff;
+  scroll-behavior: smooth;
   @apply pt-[80px] md:pt-[112px];
 }
-a>span>span{
+a > span > span {
   display: flex;
 }

@@ -11,7 +11,7 @@ import Marquee from 'react-fast-marquee';
 
 export const Footer = () => {
   return (
-    <footer className='w-full bg-[#000000B0] text-white relative z-10 overflow-hidden'>
+    <footer id='footer' className='w-full bg-[#000000B0] text-white relative z-10 overflow-hidden'>
       <div className='section-width-constraint lg:grid grid-cols-2 px-3 md:px-[clamp(48px,7.78vw,112px)] py-4 md:py-8 lg:py-12 '>
         <p className='footer-bg-text text-[64px] sm:text-[130px] lg:text-[180px] font-semibold w-fit top-0 left-1/2 -translate-x-1/2 -translate-y-[35%] pointer-events-none -z-10 absolute'>
           BSIDES

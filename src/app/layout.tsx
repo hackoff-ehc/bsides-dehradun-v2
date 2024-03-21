@@ -16,6 +16,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang='en'>
       <head>
         <link rel='icon' href='/favicon.ico' sizes='any' />
+        <link href='https://assets.calendly.com/assets/external/widget.css' rel='stylesheet' />
+        <script
+          src='https://assets.calendly.com/assets/external/widget.js'
+          type='text/javascript'
+          async
+        ></script>
       </head>
       <body className={poppins.className}>
         <Navbar />

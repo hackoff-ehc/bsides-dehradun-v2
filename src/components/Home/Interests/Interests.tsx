@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import { FaLink } from 'react-icons/fa';
 
 interface ICard {
@@ -11,7 +12,10 @@ interface ICard {
 
 const Card = ({ title, description, index, href, iconSrc }: ICard) => {
   return (
-    <div className='rounded-lg border border-solid border-[#ffffff94] bg-[#ffffff24] backdrop-blur-[1px] p-6 md:p-10 flex flex-col'>
+    <Link
+      href={href}
+      className='rounded-lg border border-solid border-[#ffffff94] bg-[#ffffff24] backdrop-blur-[1px] p-6 md:p-10 flex flex-col'
+    >
       <div className='flex items-center justify-between mb-2'>
         <span className='font-bold text-[clamp(26px,2.22vw,32px)] text-[#ffffff4d]'>{index}</span>
         <span className='aspect-square w-[48px] h-[48px] bg-[#EC0033] bg-opacity-30 rounded-full flex items-center justify-center pointer-events-none'>
@@ -25,7 +29,7 @@ const Card = ({ title, description, index, href, iconSrc }: ICard) => {
       <div className='mt-1 flex justify-end'>
         <FaLink color='#EC0033' />
       </div>
-    </div>
+    </Link>
   );
 };
 
@@ -35,14 +39,14 @@ const interestCards = [
     description:
       'Tickets for BSides Dehradun 0x01 will go on sale in mid March 2024. We encourage you to purchase your tickets early, as they are expected to sell out quickly.',
     iconSrc: '/assets/icons/ticket.svg',
-    href: '#',
+    href: '/tickets',
   },
   {
     title: 'Become a Sponsor',
     description:
       'Join the winning team and become a sponsor! We are proud to partner with amazing sponsors who support our mission and vision. Together, we make a difference.',
     iconSrc: '/assets/icons/handshake.svg',
-    href: '#',
+    href: '/sponsor-us',
   },
 ];
 

@@ -75,7 +75,7 @@ export const Connect = () => {
           'Content-Type': 'application/json',
           Accept: 'application/json',
         },
-        body: JSON.stringify({ ...formData, access_key: 'ef61b607-b249-4909-9cb6-5a8a4c83bc2c' }),
+        body: JSON.stringify({ ...formData, access_key: '6448a856-4de9-42cd-a6a4-2aa8611051fc' }),
       });
       const result = await response.json();
       if (result.success) {

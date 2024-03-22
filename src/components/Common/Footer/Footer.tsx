@@ -84,7 +84,7 @@ export const Footer = () => {
             You&apos;re free to mail us.
           </p>
           <div className='flex flex-wrap gap-2 md:gap-5'>
-            {['sponsor@bsidesderhadun.com', 'hello@bsidesderhadun.com'].map((email) => (
+            {['sponsor@bsidesderhadun.com', 'info@bsidesderhadun.com'].map((email) => (
               <a
                 key={email}
                 href={`mailto:${email}`}

@@ -134,9 +134,9 @@ export const Navbar = () => {
               <NavElement key={link.title} link={link} />
             ))}
           </nav>
-          <button className='primary-btn lg:py-[16px] lg:px-[12px] uppercase'>
+          <a href='/tickets' className='primary-btn lg:p-[16px] uppercase'>
             GET YOUR TICKETS
-          </button>
+          </a>
         </motion.header>
       </div>
     </>

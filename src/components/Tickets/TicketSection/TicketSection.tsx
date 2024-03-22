@@ -24,7 +24,7 @@ const missions = [
     title: 'Group Registrations',
     description: [
       ' Organizations with 4 or more participants can request a group discount code.      ',
-      ' Contact helpdesk@bsidesdehradun.com before registering on townscript.      ',
+      ' Contact support@bsidesdehradun.com before registering on townscript.      ',
       ' Once registered and paid, participants are not eligible for a discount code or refund      ',
     ],
   },

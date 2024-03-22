@@ -35,13 +35,12 @@ const navLinks = [
   {
     title: 'conference',
     menu: [
-      { title: 'Call for Sponsors', href: '/coming-soon' },
+      { title: 'Sponsor Us', href: '/sponsor-us' },
       { title: 'Speakers', href: '/coming-soon' },
       { title: 'Community Partners', href: '/coming-soon' },
     ],
     href: '/coming-soon',
   },
-  { title: 'sponsor us', menu: null, href: '/sponsor-us' },
   { title: 'contact us', menu: null, href: '#footer' },
 ];
 

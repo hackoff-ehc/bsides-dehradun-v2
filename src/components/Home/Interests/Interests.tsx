@@ -37,7 +37,7 @@ const interestCards = [
   {
     title: 'Get your Tickets',
     description:
-      'Tickets for BSides Dehradun 0x01 will go on sale in mid March 2024. We encourage you to purchase your tickets early, as they are expected to sell out quickly.',
+      'Tickets for BSides Dehradun 0x01 will go on sale in early April 2024. We encourage you to purchase your tickets early, as they are expected to sell out quickly.',
     iconSrc: '/assets/icons/ticket.svg',
     href: '/tickets',
   },

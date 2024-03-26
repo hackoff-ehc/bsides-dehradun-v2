@@ -138,7 +138,7 @@ const cardsContent = [
       {
         rule: 'Access to the select 2 days of training(1x of choice)',
         icon: (
-          <IoCheckmarkCircleOutline className='text-green-600 text-[20px] sm:text-[22px] md:mt-1' />
+          <IoCheckmarkCircleOutline className='text-green-600 text-[14px] sm:text-[20px] md:mt-1' />
         ),
         iconColor: true,
       },
@@ -176,7 +176,7 @@ const cardsContent = [
       {
         rule: 'Access to after party(*already included in Professional Pass)',
         icon: (
-          <IoCheckmarkCircleOutline className='text-green-600 text-[20px] sm:text-[22px] md:mt-1' />
+          <IoCheckmarkCircleOutline className='text-green-600 text-[16px] sm:text-[24px] md:mt-1' />
         ),
         iconColor: true,
       },

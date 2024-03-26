@@ -15,7 +15,7 @@
     "@react-google-maps/api": "^2.19.2",
     "framer-motion": "^10.16.16",
     "jquery": "^3.7.1",
-    "next": "14.0.3",
+    "next": "14.1.2",
     "onsenui": "^2.12.8",
     "react": "^18.2.0",
     "react-dom": "^18",
